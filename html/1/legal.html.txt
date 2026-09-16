@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Compliance - Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">Security & Compliance</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">Enterprise-Grade Local Processing</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">At Miscift, security is not a bolted-on feature; it is the foundational pillar upon which our entire platform is built. We understand that in an era of constant data breaches and corporate surveillance, professionals require a completely verifiable, zero-trust environment for handling sensitive intellectual property.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our primary security mechanism is our decentralized, client-side execution model. We leverage advanced WebAssembly (Wasm) compilers to bring enterprise-grade processing software directly into your browser's sandboxed environment. This fundamentally eliminates the massive security vulnerabilities associated with cloud-based processing.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">When you drag and drop a file into our UI, it is loaded directly into your local RAM. The WebAssembly engine processes the binary data locally and generates the output file entirely on your machine. Your data never traverses the internet, never hits a remote load balancer, and never touches our physical hard drives.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because your files never leave your device, they cannot be intercepted by man-in-the-middle (MITM) attacks during upload or download. This local execution model provides cryptographic-level assurances that your confidential legal contracts, unreleased music tracks, or proprietary blueprints remain strictly confidential.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our web infrastructure is served entirely over strict HTTPS, utilizing TLS 1.3 encryption with Perfect Forward Secrecy. This ensures that the delivery of our HTML, CSS, and WebAssembly modules to your browser cannot be tampered with or modified by malicious actors on your local network.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We follow web security best practices to help prevent cross-site scripting (XSS) and other common web vulnerabilities. Our platform is served over HTTPS to protect the delivery of our application files.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">From a compliance perspective, Miscift is the ideal solution for highly regulated industries such as healthcare, finance, and legal services. Because we operate a zero-knowledge architecture, utilizing our tools does not trigger data processing agreements (DPAs) or violate strict corporate data residency requirements.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For organizations in regulated industries, our client-side architecture means your files stay on your device. However, we have not undergone formal compliance audits (such as HIPAA or SOC 2), so please consult your own compliance team before using any online tool for sensitive data.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Similarly, for European users, our platform radically simplifies General Data Protection Regulation (GDPR) compliance. We do not act as a Data Processor for your files, meaning there are no cross-border data transfer concerns, no Right to be Forgotten requests regarding payloads, and no data breach notifications required for user files.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our underlying WebAssembly modules are compiled from trusted, open-source libraries such as FFmpeg and PDF.js. By relying on widely audited, community-driven codebases, we ensure that the cryptographic and structural integrity of our conversion algorithms meets the highest global standards.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We operate a strictly static hosting infrastructure, utilizing global Content Delivery Networks (CDNs) to serve our front-end files. Because we do not run backend database servers (like SQL or MongoDB) or dynamic backend languages (like PHP or Node.js), we are entirely immune to SQL injection and server-side remote code execution vulnerabilities.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We actively monitor our CDN edge nodes for distributed denial-of-service (DDoS) attacks and employ automated mitigation strategies to ensure the platform remains highly available. Even under heavy attack, the static nature of our site ensures that if you have already loaded the page, your local conversions will continue to function flawlessly.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We do not integrate social media tracking SDKs or invasive advertising networks that siphon user telemetry. The only external requests made by our platform are strictly limited to rendering vector icons and pulling essential structural CSS from verified, high-integrity content delivery networks.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For enterprise IT departments, Miscift requires zero firewall exceptions or network tunneling to operate. As long as the user's browser can execute standard WebAssembly and JavaScript, the entire suite of 200+ tools will function perfectly within heavily restricted corporate intranets or air-gapped environments.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are deeply committed to maintaining this zero-trust, privacy-first architecture indefinitely. If you require further technical documentation regarding our compliance postures or wish to audit our client-side execution flow, our engineering team is fully available to answer your inquiries and provide architectural diagrams.</p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

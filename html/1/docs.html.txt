@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miscift - Documentation</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main style="max-width: 900px; margin: 60px auto; padding: 40px; background: var(--color-surface); border-radius: 12px; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
+        <h1 style="font-size: 36px; font-weight: 800; margin-bottom: 32px; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">Documentation</h1>
+        <div class="page-content">
+            
+            <div style="display: flex; flex-direction: column; gap: 40px; margin-top: 32px;">
+                
+                <div>
+                    <h3 style="margin-bottom: 16px; font-size: 24px;"><i class="fa-solid fa-book" style="color: var(--color-primary); margin-right: 8px;"></i> Getting Started</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 16px;">Learn how to easily convert files using Miscift in four simple steps:</p>
+                    <ol style="color: var(--color-text-muted); line-height: 1.8; margin-left: 24px; margin-bottom: 24px;">
+                        <li style="margin-bottom: 8px;"><strong>Choose your tool:</strong> Navigate our hub to find the specific conversion tool you need (e.g., Image Converter, Document Converter).</li>
+                        <li style="margin-bottom: 8px;"><strong>Upload files:</strong> Drag and drop your file into the browser, or click the upload button to select a file from your device.</li>
+                        <li style="margin-bottom: 8px;"><strong>Configure settings:</strong> Adjust any advanced parameters such as quality, resolution, or format-specific options depending on your needs.</li>
+                        <li style="margin-bottom: 8px;"><strong>Convert:</strong> Click the "Convert" button. Your file will be processed locally in your browser and automatically downloaded when finished.</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 16px; font-size: 24px;"><i class="fa-solid fa-file-lines" style="color: var(--color-primary); margin-right: 8px;"></i> Supported Formats</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 16px;">Miscift supports hundreds of file formats across various multimedia and data categories. Below are some of the most common formats:</p>
+                    <ul style="color: var(--color-text-muted); line-height: 1.8; margin-left: 24px; margin-bottom: 24px;">
+                        <li style="margin-bottom: 8px;"><strong>Image:</strong> PNG, JPG/JPEG, WebP, GIF, SVG, BMP, TIFF, HEIC</li>
+                        <li style="margin-bottom: 8px;"><strong>Video:</strong> MP4, WebM, AVI, MKV, MOV, FLV, WMV</li>
+                        <li style="margin-bottom: 8px;"><strong>Audio:</strong> MP3, WAV, FLAC, OGG, AAC, M4A, WMA</li>
+                        <li style="margin-bottom: 8px;"><strong>Document:</strong> PDF, DOCX, DOC, TXT, RTF, ODT</li>
+                        <li style="margin-bottom: 8px;"><strong>Archive:</strong> ZIP, 7Z, RAR, TAR, GZ, BZ2</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 16px; font-size: 24px;"><i class="fa-solid fa-circle-question" style="color: var(--color-primary); margin-right: 8px;"></i> FAQ</h3>
+                    
+                    <div style="margin-bottom: 16px;">
+                        <strong style="display: block; font-size: 18px; margin-bottom: 8px;">Do I need to create an account?</strong>
+                        <p style="color: var(--color-text-muted); line-height: 1.6;">No, Miscift is completely free to use without any registration or login requirements.</p>
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <strong style="display: block; font-size: 18px; margin-bottom: 8px;">Is it safe to convert sensitive documents?</strong>
+                        <p style="color: var(--color-text-muted); line-height: 1.6;">Yes. Because everything is processed client-side in your web browser, your files never leave your device. We do not have access to your data.</p>
+                    </div>
+
+                    <div style="margin-bottom: 24px;">
+                        <strong style="display: block; font-size: 18px; margin-bottom: 8px;">Can I use Miscift offline?</strong>
+                        <p style="color: var(--color-text-muted); line-height: 1.6;">While the processing happens locally, you currently need an active internet connection to load the Miscift application and its underlying WebAssembly modules.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 16px; font-size: 24px;"><i class="fa-solid fa-code" style="color: var(--color-primary); margin-right: 8px;"></i> Developer API</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: var(--color-text-muted); margin-bottom: 24px;">We are exploring ways to make our conversion tools more accessible to developers in the future.</p>
+                    <p style="color: var(--color-text-muted); font-style: italic;">This section is a work in progress. Check back for updates as we grow.</p>
+                </div>
+                
+            </div>
+        
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

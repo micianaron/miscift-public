@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 100% Secure & Private | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Read our Privacy Policy. At Miscift, your files never leave your device. We use WebAssembly to process everything locally.">
+    <link rel="canonical" href="https://miscift.com/privacy">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Privacy Policy - 100% Secure & Private | Miscift">
+    <meta property="og:description" content="Read our Privacy Policy. At Miscift, your files never leave your device. We use WebAssembly to process everything locally.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/privacy">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Privacy Policy - 100% Secure & Private | Miscift">
+    <meta name="twitter:description" content="Read our Privacy Policy. At Miscift, your files never leave your device. We use WebAssembly to process everything locally.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Miscift Privacy",
+      "url": "https://miscift.com/privacy",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "description": "Read our Privacy Policy. At Miscift, your files never leave your device. We use WebAssembly to process everything locally."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">Privacy Policy</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">Total Data Sovereignty</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">At Miscift, your privacy is our absolute highest priority. Unlike virtually every other file conversion service on the internet, we have architected our entire platform from the ground up to ensure that we never have access to your personal data. We believe that privacy is a fundamental human right, not a premium feature.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">The core of our privacy guarantee lies in our use of client-side WebAssembly (Wasm) technology. When you select a file to convert, whether it is a highly confidential legal document or a private family photograph, that file is processed entirely within the memory of your own web browser.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because the processing happens locally on your device's CPU and RAM, your files are never transmitted across the internet to our servers. There are no upload queues, no cloud storage buckets, and no temporary directories hosted on our infrastructure. Your payload physically cannot be intercepted by us.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We do not require you to create an account, register an email address, or provide any personal identification to use our services. You can utilize our entire suite of over 200 conversion tools completely anonymously, ensuring your digital footprint remains as small as possible.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px; font-weight: bold;">We do not collect, store, or sell any user data input into these tools. All processing happens client-side / our servers clear data every 24 hours.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because we do not host your files, we do not have a 'data retention' policy for user payloads. Your files exist solely on your hard drive, and the converted output is saved directly back to your hard drive. Once you close your browser tab, all temporary memory utilized during the conversion is instantly wiped by your operating system.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are entirely compliant with the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and all other major international data privacy frameworks. In fact, our serverless architecture fundamentally bypasses many of these regulations because we do not collect or process Personally Identifiable Information (PII).</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our website does not utilize invasive third-party tracking pixels or session recording scripts. We may use basic analytics to understand site traffic, and our ad network may use cookies as described below.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you choose to communicate with our support team via email, any information you provide will be used strictly for resolving your specific inquiry. We will never add your email address to marketing newsletters without your explicit consent, and we will never sell your contact information to third-party data brokers.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">While our site may contain links to external third-party websites (such as our payment processors for donations), we are not responsible for the privacy practices or the content of those external sites. We strongly encourage our users to review the privacy policies of any site they visit outside the Miscift domain.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We do not utilize cookies for tracking or advertising purposes. Any cookies generated by our platform are strictly limited to essential functionality, such as storing your dark mode preferences or caching advanced settings presets locally in your browser to improve your user experience on subsequent visits.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because we utilize a decentralized, client-side processing model, we do not employ a Data Protection Officer (DPO). The responsibility and control over the data remain entirely in the hands of the end-user. You act as the sole data controller and processor for your own payloads.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We reserve the right to update this Privacy Policy at any time to reflect changes in our operational practices or legal requirements. Any modifications will be posted directly to this page, and we encourage you to review it periodically to stay informed about how we are actively protecting your privacy.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Children's privacy is incredibly important to us. Because our service is completely anonymous and requires no registration, it is inherently safe for users of all ages. We do not knowingly solicit, collect, or store any data from children under the age of 13.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">In the highly unlikely event of a data breach affecting our static hosting infrastructure, the only exposed data would be the structural HTML/CSS/JS files that power the site. Because user payloads are never uploaded, there is absolutely zero risk of your private documents being compromised in a server-side attack.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you have any questions, concerns, or technical inquiries regarding our Privacy Policy or our client-side architecture, please reach out to our team. We are radically transparent about our technology stack and are always happy to explain exactly how we achieve zero-knowledge file conversion.</p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

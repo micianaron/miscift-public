@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Conversion Tools - Image, Video, Audio Converters | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Browse our full directory of over 200 free online file conversion and compression tools. Fast, secure, and client-side processing.">
+    <link rel="canonical" href="https://miscift.com/tools">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="All Conversion Tools - Image, Video, Audio Converters | Miscift">
+    <meta property="og:description" content="Browse our full directory of over 200 free online file conversion and compression tools. Fast, secure, and client-side processing.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/tools">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="All Conversion Tools - Image, Video, Audio Converters | Miscift">
+    <meta name="twitter:description" content="Browse our full directory of over 200 free online file conversion and compression tools. Fast, secure, and client-side processing.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Miscift Tools Directory",
+      "url": "https://miscift.com/tools",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "description": "Browse our full directory of over 200 free online file conversion and compression tools. Fast, secure, and client-side processing."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main>
+        <div class="page-header">
+            <h1>All Tools</h1>
+        </div>
+        <div class="content-box" style="background: transparent; border: none; padding: 0;">
+            <div style="margin-bottom: 24px;"><input type="text" id="toolSearch" placeholder="Search for a conversion tool (e.g., png to jpg)..." class="form-control" style="width: 100%; padding: 12px; border: 1px solid var(--color-border-default); border-radius: 6px; background-color: var(--color-canvas-default); color: var(--color-fg-default); font-size: 16px;"></div>
+<ul class="tool-list" id="allToolsList">
+    <li class="tool-item"><a href="pages/image/bmp-to-svg.html"><i class="fa-solid fa-image"></i> Bmp To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/bmp-to-tiff.html"><i class="fa-solid fa-image"></i> Bmp To Tiff</a></li>
+    <li class="tool-item"><a href="pages/image/gif-to-bmp.html"><i class="fa-solid fa-image"></i> Gif To Bmp</a></li>
+    <li class="tool-item"><a href="pages/image/gif-to-svg.html"><i class="fa-solid fa-image"></i> Gif To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/gif-to-tiff.html"><i class="fa-solid fa-image"></i> Gif To Tiff</a></li>
+    <li class="tool-item"><a href="pages/image/jpeg-to-bmp.html"><i class="fa-solid fa-image"></i> Jpeg To Bmp</a></li>
+    <li class="tool-item"><a href="pages/image/jpeg-to-gif.html"><i class="fa-solid fa-image"></i> Jpeg To Gif</a></li>
+    <li class="tool-item"><a href="pages/image/jpeg-to-svg.html"><i class="fa-solid fa-image"></i> Jpeg To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/jpeg-to-tiff.html"><i class="fa-solid fa-image"></i> Jpeg To Tiff</a></li>
+    <li class="tool-item"><a href="pages/image/jpeg-to-webp.html"><i class="fa-solid fa-image"></i> Jpeg To Webp</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-bmp.html"><i class="fa-solid fa-image"></i> Jpg To Bmp</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-gif.html"><i class="fa-solid fa-image"></i> Jpg To Gif</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-jpeg.html"><i class="fa-solid fa-image"></i> Jpg To Jpeg</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-svg.html"><i class="fa-solid fa-image"></i> Jpg To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-tiff.html"><i class="fa-solid fa-image"></i> Jpg To Tiff</a></li>
+    <li class="tool-item"><a href="pages/image/jpg-to-webp.html"><i class="fa-solid fa-image"></i> Jpg To Webp</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-bmp.html"><i class="fa-solid fa-image"></i> Png To Bmp</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-gif.html"><i class="fa-solid fa-image"></i> Png To Gif</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-jpeg.html"><i class="fa-solid fa-image"></i> Png To Jpeg</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-jpg.html"><i class="fa-solid fa-image"></i> Png To Jpg</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-svg.html"><i class="fa-solid fa-image"></i> Png To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-tiff.html"><i class="fa-solid fa-image"></i> Png To Tiff</a></li>
+    <li class="tool-item"><a href="pages/image/png-to-webp.html"><i class="fa-solid fa-image"></i> Png To Webp</a></li>
+    <li class="tool-item"><a href="pages/image/tiff-to-svg.html"><i class="fa-solid fa-image"></i> Tiff To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/webp-to-bmp.html"><i class="fa-solid fa-image"></i> Webp To Bmp</a></li>
+    <li class="tool-item"><a href="pages/image/webp-to-gif.html"><i class="fa-solid fa-image"></i> Webp To Gif</a></li>
+    <li class="tool-item"><a href="pages/image/webp-to-svg.html"><i class="fa-solid fa-image"></i> Webp To Svg</a></li>
+    <li class="tool-item"><a href="pages/image/webp-to-tiff.html"><i class="fa-solid fa-image"></i> Webp To Tiff</a></li>
+    <li class="tool-item"><a href="pages/video/avi-to-flv.html"><i class="fa-solid fa-video"></i> Avi To Flv</a></li>
+    <li class="tool-item"><a href="pages/video/avi-to-mkv.html"><i class="fa-solid fa-video"></i> Avi To Mkv</a></li>
+    <li class="tool-item"><a href="pages/video/avi-to-mov.html"><i class="fa-solid fa-video"></i> Avi To Mov</a></li>
+    <li class="tool-item"><a href="pages/video/avi-to-webm.html"><i class="fa-solid fa-video"></i> Avi To Webm</a></li>
+    <li class="tool-item"><a href="pages/video/avi-to-wmv.html"><i class="fa-solid fa-video"></i> Avi To Wmv</a></li>
+    <li class="tool-item"><a href="pages/video/flv-to-mkv.html"><i class="fa-solid fa-video"></i> Flv To Mkv</a></li>
+    <li class="tool-item"><a href="pages/video/flv-to-webm.html"><i class="fa-solid fa-video"></i> Flv To Webm</a></li>
+    <li class="tool-item"><a href="pages/video/mkv-to-webm.html"><i class="fa-solid fa-video"></i> Mkv To Webm</a></li>
+    <li class="tool-item"><a href="pages/video/mov-to-flv.html"><i class="fa-solid fa-video"></i> Mov To Flv</a></li>
+    <li class="tool-item"><a href="pages/video/mov-to-mkv.html"><i class="fa-solid fa-video"></i> Mov To Mkv</a></li>
+    <li class="tool-item"><a href="pages/video/mov-to-webm.html"><i class="fa-solid fa-video"></i> Mov To Webm</a></li>
+    <li class="tool-item"><a href="pages/video/mov-to-wmv.html"><i class="fa-solid fa-video"></i> Mov To Wmv</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-avi.html"><i class="fa-solid fa-video"></i> Mp4 To Avi</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-flv.html"><i class="fa-solid fa-video"></i> Mp4 To Flv</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-mkv.html"><i class="fa-solid fa-video"></i> Mp4 To Mkv</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-mov.html"><i class="fa-solid fa-video"></i> Mp4 To Mov</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-webm.html"><i class="fa-solid fa-video"></i> Mp4 To Webm</a></li>
+    <li class="tool-item"><a href="pages/video/mp4-to-wmv.html"><i class="fa-solid fa-video"></i> Mp4 To Wmv</a></li>
+    <li class="tool-item"><a href="pages/video/wmv-to-flv.html"><i class="fa-solid fa-video"></i> Wmv To Flv</a></li>
+    <li class="tool-item"><a href="pages/video/wmv-to-mkv.html"><i class="fa-solid fa-video"></i> Wmv To Mkv</a></li>
+    <li class="tool-item"><a href="pages/video/wmv-to-webm.html"><i class="fa-solid fa-video"></i> Wmv To Webm</a></li>
+    <li class="tool-item"><a href="pages/zip/7z-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Bz2</a></li>
+    <li class="tool-item"><a href="pages/zip/7z-to-gz.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Gz</a></li>
+    <li class="tool-item"><a href="pages/zip/7z-to-tar.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Tar</a></li>
+    <li class="tool-item"><a href="pages/zip/gz-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Gz To Bz2</a></li>
+    <li class="tool-item"><a href="pages/zip/rar-to-7z.html"><i class="fa-solid fa-file-zipper"></i> Rar To 7Z</a></li>
+    <li class="tool-item"><a href="pages/zip/rar-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Rar To Bz2</a></li>
+    <li class="tool-item"><a href="pages/zip/rar-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Rar To Gz</a></li>
+    <li class="tool-item"><a href="pages/zip/rar-to-tar.html"><i class="fa-solid fa-file-zipper"></i> Rar To Tar</a></li>
+    <li class="tool-item"><a href="pages/zip/tar-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Tar To Bz2</a></li>
+    <li class="tool-item"><a href="pages/zip/tar-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Tar To Gz</a></li>
+    <li class="tool-item"><a href="pages/zip/zip-to-7z.html"><i class="fa-solid fa-file-zipper"></i> Zip To 7Z</a></li>
+    <li class="tool-item"><a href="pages/zip/zip-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Zip To Bz2</a></li>
+    <li class="tool-item"><a href="pages/zip/zip-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Zip To Gz</a></li>
+    <li class="tool-item"><a href="pages/zip/zip-to-rar.html"><i class="fa-solid fa-file-zipper"></i> Zip To Rar</a></li>
+    <li class="tool-item"><a href="pages/zip/zip-to-tar.html"><i class="fa-solid fa-file-zipper"></i> Zip To Tar</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Doc To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Doc To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-html.html"><i class="fa-solid fa-file-pdf"></i> Doc To Html</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Doc To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Doc To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Doc To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/doc-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Doc To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Docx To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Docx To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-html.html"><i class="fa-solid fa-file-pdf"></i> Docx To Html</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Docx To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Docx To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Docx To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/docx-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Docx To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Epub To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Epub To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-html.html"><i class="fa-solid fa-file-pdf"></i> Epub To Html</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Epub To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Epub To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Epub To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/epub-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Epub To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Html To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Html To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Html To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Html To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Html To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Html To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/html-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Html To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-html.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Html</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/mobi-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Mobi To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-html.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Html</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Rtf</a></li>
+    <li class="tool-item"><a href="pages/document/pdf-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Pdf To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-html.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Html</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/rtf-to-txt.html"><i class="fa-solid fa-file-pdf"></i> Rtf To Txt</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-doc.html"><i class="fa-solid fa-file-pdf"></i> Txt To Doc</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-docx.html"><i class="fa-solid fa-file-pdf"></i> Txt To Docx</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-epub.html"><i class="fa-solid fa-file-pdf"></i> Txt To Epub</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-html.html"><i class="fa-solid fa-file-pdf"></i> Txt To Html</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-mobi.html"><i class="fa-solid fa-file-pdf"></i> Txt To Mobi</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-pdf.html"><i class="fa-solid fa-file-pdf"></i> Txt To Pdf</a></li>
+    <li class="tool-item"><a href="pages/document/txt-to-rtf.html"><i class="fa-solid fa-file-pdf"></i> Txt To Rtf</a></li>
+    <li class="tool-item"><a href="pages/word/doc-to-docx.html"><i class="fa-solid fa-file-word"></i> Doc To Docx</a></li>
+    <li class="tool-item"><a href="pages/word/doc-to-odt.html"><i class="fa-solid fa-file-word"></i> Doc To Odt</a></li>
+    <li class="tool-item"><a href="pages/word/doc-to-pdf.html"><i class="fa-solid fa-file-word"></i> Doc To Pdf</a></li>
+    <li class="tool-item"><a href="pages/word/doc-to-rtf.html"><i class="fa-solid fa-file-word"></i> Doc To Rtf</a></li>
+    <li class="tool-item"><a href="pages/word/doc-to-txt.html"><i class="fa-solid fa-file-word"></i> Doc To Txt</a></li>
+    <li class="tool-item"><a href="pages/word/docx-to-doc.html"><i class="fa-solid fa-file-word"></i> Docx To Doc</a></li>
+    <li class="tool-item"><a href="pages/word/docx-to-odt.html"><i class="fa-solid fa-file-word"></i> Docx To Odt</a></li>
+    <li class="tool-item"><a href="pages/word/docx-to-pdf.html"><i class="fa-solid fa-file-word"></i> Docx To Pdf</a></li>
+    <li class="tool-item"><a href="pages/word/docx-to-rtf.html"><i class="fa-solid fa-file-word"></i> Docx To Rtf</a></li>
+    <li class="tool-item"><a href="pages/word/docx-to-txt.html"><i class="fa-solid fa-file-word"></i> Docx To Txt</a></li>
+    <li class="tool-item"><a href="pages/word/odt-to-doc.html"><i class="fa-solid fa-file-word"></i> Odt To Doc</a></li>
+    <li class="tool-item"><a href="pages/word/odt-to-docx.html"><i class="fa-solid fa-file-word"></i> Odt To Docx</a></li>
+    <li class="tool-item"><a href="pages/word/odt-to-pdf.html"><i class="fa-solid fa-file-word"></i> Odt To Pdf</a></li>
+    <li class="tool-item"><a href="pages/word/odt-to-rtf.html"><i class="fa-solid fa-file-word"></i> Odt To Rtf</a></li>
+    <li class="tool-item"><a href="pages/word/odt-to-txt.html"><i class="fa-solid fa-file-word"></i> Odt To Txt</a></li>
+    <li class="tool-item"><a href="pages/word/pdf-to-doc.html"><i class="fa-solid fa-file-word"></i> Pdf To Doc</a></li>
+    <li class="tool-item"><a href="pages/word/pdf-to-docx.html"><i class="fa-solid fa-file-word"></i> Pdf To Docx</a></li>
+    <li class="tool-item"><a href="pages/word/pdf-to-odt.html"><i class="fa-solid fa-file-word"></i> Pdf To Odt</a></li>
+    <li class="tool-item"><a href="pages/word/pdf-to-rtf.html"><i class="fa-solid fa-file-word"></i> Pdf To Rtf</a></li>
+    <li class="tool-item"><a href="pages/word/pdf-to-txt.html"><i class="fa-solid fa-file-word"></i> Pdf To Txt</a></li>
+    <li class="tool-item"><a href="pages/word/rtf-to-doc.html"><i class="fa-solid fa-file-word"></i> Rtf To Doc</a></li>
+    <li class="tool-item"><a href="pages/word/rtf-to-docx.html"><i class="fa-solid fa-file-word"></i> Rtf To Docx</a></li>
+    <li class="tool-item"><a href="pages/word/rtf-to-odt.html"><i class="fa-solid fa-file-word"></i> Rtf To Odt</a></li>
+    <li class="tool-item"><a href="pages/word/rtf-to-pdf.html"><i class="fa-solid fa-file-word"></i> Rtf To Pdf</a></li>
+    <li class="tool-item"><a href="pages/word/rtf-to-txt.html"><i class="fa-solid fa-file-word"></i> Rtf To Txt</a></li>
+    <li class="tool-item"><a href="pages/word/txt-to-doc.html"><i class="fa-solid fa-file-word"></i> Txt To Doc</a></li>
+    <li class="tool-item"><a href="pages/word/txt-to-docx.html"><i class="fa-solid fa-file-word"></i> Txt To Docx</a></li>
+    <li class="tool-item"><a href="pages/word/txt-to-odt.html"><i class="fa-solid fa-file-word"></i> Txt To Odt</a></li>
+    <li class="tool-item"><a href="pages/word/txt-to-pdf.html"><i class="fa-solid fa-file-word"></i> Txt To Pdf</a></li>
+    <li class="tool-item"><a href="pages/word/txt-to-rtf.html"><i class="fa-solid fa-file-word"></i> Txt To Rtf</a></li>
+    <li class="tool-item"><a href="pages/audio/aac-to-flac.html"><i class="fa-solid fa-file-audio"></i> Aac To Flac</a></li>
+    <li class="tool-item"><a href="pages/audio/aac-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Aac To M4A</a></li>
+    <li class="tool-item"><a href="pages/audio/aac-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Aac To Ogg</a></li>
+    <li class="tool-item"><a href="pages/audio/aac-to-wma.html"><i class="fa-solid fa-file-audio"></i> Aac To Wma</a></li>
+    <li class="tool-item"><a href="pages/audio/flac-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Flac To M4A</a></li>
+    <li class="tool-item"><a href="pages/audio/flac-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Flac To Ogg</a></li>
+    <li class="tool-item"><a href="pages/audio/flac-to-wma.html"><i class="fa-solid fa-file-audio"></i> Flac To Wma</a></li>
+    <li class="tool-item"><a href="pages/audio/m4a-to-wma.html"><i class="fa-solid fa-file-audio"></i> M4A To Wma</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-aac.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Aac</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-flac.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Flac</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Mp3 To M4A</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Ogg</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-wav.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Wav</a></li>
+    <li class="tool-item"><a href="pages/audio/mp3-to-wma.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Wma</a></li>
+    <li class="tool-item"><a href="pages/audio/ogg-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Ogg To M4A</a></li>
+    <li class="tool-item"><a href="pages/audio/ogg-to-wma.html"><i class="fa-solid fa-file-audio"></i> Ogg To Wma</a></li>
+    <li class="tool-item"><a href="pages/audio/wav-to-aac.html"><i class="fa-solid fa-file-audio"></i> Wav To Aac</a></li>
+    <li class="tool-item"><a href="pages/audio/wav-to-flac.html"><i class="fa-solid fa-file-audio"></i> Wav To Flac</a></li>
+    <li class="tool-item"><a href="pages/audio/wav-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Wav To M4A</a></li>
+    <li class="tool-item"><a href="pages/audio/wav-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Wav To Ogg</a></li>
+    <li class="tool-item"><a href="pages/audio/wav-to-wma.html"><i class="fa-solid fa-file-audio"></i> Wav To Wma</a></li>
+    <li class="tool-item"><a href="pages/unit/celsius-to-fahrenheit.html"><i class="fa-solid fa-scale-balanced"></i> Celsius To Fahrenheit</a></li>
+    <li class="tool-item"><a href="pages/unit/celsius-to-kelvin.html"><i class="fa-solid fa-scale-balanced"></i> Celsius To Kelvin</a></li>
+    <li class="tool-item"><a href="pages/unit/centimeter-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Centimeter To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/centimeter-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Centimeter To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/cup-to-pint.html"><i class="fa-solid fa-scale-balanced"></i> Cup To Pint</a></li>
+    <li class="tool-item"><a href="pages/unit/fahrenheit-to-kelvin.html"><i class="fa-solid fa-scale-balanced"></i> Fahrenheit To Kelvin</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-centimeter.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Centimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-inch.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Inch</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-kilometer.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Kilometer</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-mile.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Mile</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/foot-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Foot To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/gallon-to-cup.html"><i class="fa-solid fa-scale-balanced"></i> Gallon To Cup</a></li>
+    <li class="tool-item"><a href="pages/unit/gallon-to-milliliter.html"><i class="fa-solid fa-scale-balanced"></i> Gallon To Milliliter</a></li>
+    <li class="tool-item"><a href="pages/unit/gallon-to-pint.html"><i class="fa-solid fa-scale-balanced"></i> Gallon To Pint</a></li>
+    <li class="tool-item"><a href="pages/unit/gram-to-kilogram.html"><i class="fa-solid fa-scale-balanced"></i> Gram To Kilogram</a></li>
+    <li class="tool-item"><a href="pages/unit/gram-to-ounce.html"><i class="fa-solid fa-scale-balanced"></i> Gram To Ounce</a></li>
+    <li class="tool-item"><a href="pages/unit/gram-to-pound.html"><i class="fa-solid fa-scale-balanced"></i> Gram To Pound</a></li>
+    <li class="tool-item"><a href="pages/unit/hour-to-day.html"><i class="fa-solid fa-scale-balanced"></i> Hour To Day</a></li>
+    <li class="tool-item"><a href="pages/unit/inch-to-centimeter.html"><i class="fa-solid fa-scale-balanced"></i> Inch To Centimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/inch-to-kilometer.html"><i class="fa-solid fa-scale-balanced"></i> Inch To Kilometer</a></li>
+    <li class="tool-item"><a href="pages/unit/inch-to-mile.html"><i class="fa-solid fa-scale-balanced"></i> Inch To Mile</a></li>
+    <li class="tool-item"><a href="pages/unit/inch-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Inch To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/inch-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Inch To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/kilogram-to-ounce.html"><i class="fa-solid fa-scale-balanced"></i> Kilogram To Ounce</a></li>
+    <li class="tool-item"><a href="pages/unit/kilogram-to-pound.html"><i class="fa-solid fa-scale-balanced"></i> Kilogram To Pound</a></li>
+    <li class="tool-item"><a href="pages/unit/kilometer-to-centimeter.html"><i class="fa-solid fa-scale-balanced"></i> Kilometer To Centimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/kilometer-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Kilometer To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/kilometer-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Kilometer To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/liter-to-cup.html"><i class="fa-solid fa-scale-balanced"></i> Liter To Cup</a></li>
+    <li class="tool-item"><a href="pages/unit/liter-to-gallon.html"><i class="fa-solid fa-scale-balanced"></i> Liter To Gallon</a></li>
+    <li class="tool-item"><a href="pages/unit/liter-to-milliliter.html"><i class="fa-solid fa-scale-balanced"></i> Liter To Milliliter</a></li>
+    <li class="tool-item"><a href="pages/unit/liter-to-pint.html"><i class="fa-solid fa-scale-balanced"></i> Liter To Pint</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-centimeter.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Centimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-foot.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Foot</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-inch.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Inch</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-kilometer.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Kilometer</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-mile.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Mile</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/meter-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Meter To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/mile-to-centimeter.html"><i class="fa-solid fa-scale-balanced"></i> Mile To Centimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/mile-to-kilometer.html"><i class="fa-solid fa-scale-balanced"></i> Mile To Kilometer</a></li>
+    <li class="tool-item"><a href="pages/unit/mile-to-millimeter.html"><i class="fa-solid fa-scale-balanced"></i> Mile To Millimeter</a></li>
+    <li class="tool-item"><a href="pages/unit/mile-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Mile To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/milliliter-to-cup.html"><i class="fa-solid fa-scale-balanced"></i> Milliliter To Cup</a></li>
+    <li class="tool-item"><a href="pages/unit/milliliter-to-pint.html"><i class="fa-solid fa-scale-balanced"></i> Milliliter To Pint</a></li>
+    <li class="tool-item"><a href="pages/unit/millimeter-to-yard.html"><i class="fa-solid fa-scale-balanced"></i> Millimeter To Yard</a></li>
+    <li class="tool-item"><a href="pages/unit/minute-to-day.html"><i class="fa-solid fa-scale-balanced"></i> Minute To Day</a></li>
+    <li class="tool-item"><a href="pages/unit/minute-to-hour.html"><i class="fa-solid fa-scale-balanced"></i> Minute To Hour</a></li>
+    <li class="tool-item"><a href="pages/unit/pound-to-ounce.html"><i class="fa-solid fa-scale-balanced"></i> Pound To Ounce</a></li>
+    <li class="tool-item"><a href="pages/unit/second-to-day.html"><i class="fa-solid fa-scale-balanced"></i> Second To Day</a></li>
+    <li class="tool-item"><a href="pages/unit/second-to-hour.html"><i class="fa-solid fa-scale-balanced"></i> Second To Hour</a></li>
+    <li class="tool-item"><a href="pages/unit/second-to-minute.html"><i class="fa-solid fa-scale-balanced"></i> Second To Minute</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-bmp.html"><i class="fa-solid fa-compress"></i> Compress Bmp</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-gif.html"><i class="fa-solid fa-compress"></i> Compress Gif</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-jpeg.html"><i class="fa-solid fa-compress"></i> Compress Jpeg</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-jpg.html"><i class="fa-solid fa-compress"></i> Compress Jpg</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-png.html"><i class="fa-solid fa-compress"></i> Compress Png</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-svg.html"><i class="fa-solid fa-compress"></i> Compress Svg</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-tiff.html"><i class="fa-solid fa-compress"></i> Compress Tiff</a></li>
+    <li class="tool-item"><a href="pages/image-compress/compress-webp.html"><i class="fa-solid fa-compress"></i> Compress Webp</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-avi.html"><i class="fa-solid fa-compress"></i> Compress Avi</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-flv.html"><i class="fa-solid fa-compress"></i> Compress Flv</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-mkv.html"><i class="fa-solid fa-compress"></i> Compress Mkv</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-mov.html"><i class="fa-solid fa-compress"></i> Compress Mov</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-mp4.html"><i class="fa-solid fa-compress"></i> Compress Mp4</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-webm.html"><i class="fa-solid fa-compress"></i> Compress Webm</a></li>
+    <li class="tool-item"><a href="pages/video-compress/compress-wmv.html"><i class="fa-solid fa-compress"></i> Compress Wmv</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-aac.html"><i class="fa-solid fa-compress"></i> Compress Aac</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-flac.html"><i class="fa-solid fa-compress"></i> Compress Flac</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-m4a.html"><i class="fa-solid fa-compress"></i> Compress M4A</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-mp3.html"><i class="fa-solid fa-compress"></i> Compress Mp3</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-ogg.html"><i class="fa-solid fa-compress"></i> Compress Ogg</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-wav.html"><i class="fa-solid fa-compress"></i> Compress Wav</a></li>
+    <li class="tool-item"><a href="pages/audio-compress/compress-wma.html"><i class="fa-solid fa-compress"></i> Compress Wma</a></li>
+</ul>
+<script>
+document.getElementById('toolSearch').addEventListener('keyup', function() {
+    let filter = this.value.toLowerCase();
+    let items = document.querySelectorAll('.tool-item');
+    items.forEach(function(item) {
+        let text = item.textContent || item.innerText;
+        if (text.toLowerCase().indexOf(filter) > -1) {
+            item.style.display = '';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+});
+</script>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

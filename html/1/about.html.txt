@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Secure Client-Side File Conversion | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+    <link rel="canonical" href="https://miscift.com/about">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="About Us - Secure Client-Side File Conversion | Miscift">
+    <meta property="og:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/about">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Us - Secure Client-Side File Conversion | Miscift">
+    <meta name="twitter:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Miscift",
+      "url": "https://miscift.com/about",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "description": "Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">About Us</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">The Miscift Vision</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;"><h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">Our Story</h2>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 20px;">
+    Miscift was built by <strong>Mic Ian Aron</strong>, a developer passionate about privacy and efficient web tools. I started this project because I was frustrated with online converters that required uploading sensitive documents to unknown servers, often gating features behind paywalls or spamming users with ads. I wanted to create a tool I could trust myself.
+</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 20px;">
+    To solve this, I built Miscift using modern WebAssembly (Wasm) algorithms and client-side processing technologies. The technology stack relies entirely on the browser's native capabilities, meaning your files are processed directly on your device. We use a combination of HTML, CSS, JavaScript, and powerful open-source Wasm libraries like FFmpeg and PDF.js to handle conversions locally.
+</p>
+
+Miscift is a revolutionary client-side file conversion platform designed to process your media natively within your browser. By utilizing the incredible computational power of modern WebAssembly algorithms, we completely eliminate the need to upload your sensitive payloads to remote third-party servers. This ensures your documents, photos, and videos remain strictly on your local machine at all times.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our expansive suite of over 200 conversion tools provides unparalleled flexibility for digital creators and professionals. Whether you are migrating vast libraries of high-resolution TIFF images or compressing dense 4K MKV video containers, Miscift handles the workload effortlessly. You can seamlessly transition between drastically different data structures without ever installing bulky desktop software.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Privacy is not simply an afterthought for our engineering team; it is the fundamental architectural constraint of the Miscift ecosystem. Because your files are parsed and rewritten directly in the browser's sandbox environment, there are zero data leaks and zero data retention policies to worry about. We physically cannot see, store, or sell your personal data.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Speed and efficiency define the core user experience across all of our conversion hubs. Traditional online converters force you to wait in agonizing server queues while your gigabyte-sized files painfully upload over standard internet protocols. Here, the conversion speed is limited solely by the processing capabilities of your own local CPU and memory.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We passionately believe that enterprise-grade file manipulation tools should be accessible to everyone completely free of charge. Unlike our competitors who gatekeep high-quality codecs behind expensive monthly subscriptions, Miscift provides all advanced settings and unlimited conversions without a paywall. There are no artificial bottlenecks or aggressive monetization strategies deployed here.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For audiophiles and sound engineers, our audio hubs offer pristine, bit-perfect processing utilizing the latest open-source codec implementations. You can instantly compress massive WAV studio recordings down to highly efficient FLAC or AAC files without sacrificing any acoustic fidelity. Advanced controls allow you to manipulate sample rates and audio bitrates with pinpoint precision.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Graphic designers will heavily benefit from our image manipulation suite, which perfectly handles both raster and vector graphics. You can safely convert complex, math-based SVG designs into universally compatible PNGs with absolute transparency intact. We also offer robust resizing and lossy compression sliders to ensure your images meet strict web performance standards.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Video editors frequently face compatibility nightmares when attempting to share proprietary formats across different operating systems. Miscift solves this by offering lightning-fast client-side transcoding from formats like MOV and AVI directly into the universally supported MP4 standard. You can also trim the start and end times of your footage directly within the advanced settings panel.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Managing business documents requires absolute security and flawless formatting retention. Our document processors flawlessly convert legacy formats like DOC and RTF into the modern DOCX standard or locked PDF layouts. You can even apply robust password protection directly to your final output to ensure confidential corporate data remains securely encrypted.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">System administrators and web developers can leverage our archive hubs to quickly compress and extract dense directory structures. By supporting powerful, high-compression algorithms like 7Z, GZ, and BZ2, you can significantly reduce the storage footprint of your server backups. Our tools make creating highly optimized tarballs incredibly simple and intuitive.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">To ensure absolute compliance with global data protection laws like GDPR and CCPA, our application is inherently compliant by design. Because all file processing happens exclusively on your local device, we never collect, transmit, or store any Personally Identifiable Information \(PII\) or user data. You can independently verify our strict GDPR and CCPA compliance by auditing our public, open-source codebase. You do not need to sign a data processing agreement to use Miscift because we explicitly never process your data on our hardware. This decentralized model represents the absolute future of secure web applications.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Students and researchers will find our unit conversion utilities incredibly useful for daily calculations. Whether you are translating metric units of mass like kilograms into imperial pounds, or converting complex temperature scales for scientific papers, our calculators are instantly responsive. They rely on standard, peer-reviewed mathematical formulas to guarantee absolute decimal accuracy.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are constantly expanding the Miscift toolset to support the absolute latest file extensions and multimedia codecs. As new technologies like Google's WebP and AV1 gain global market share, our WebAssembly engine is rapidly updated to natively support them. You will never be left behind by rapidly shifting digital ecosystem standards.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">The user interface across Miscift was explicitly designed to be minimalist, intuitive, and highly responsive. You are never more than two clicks away from executing a complex conversion, thanks to our robust mega-menus and intelligent drag-and-drop dropzones. Every single tool features a clean, distraction-free environment that prioritizes workflow efficiency.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you have benefited from the privacy, speed, and massive scope of the Miscift platform, we highly encourage you to support our ongoing mission. As a completely free service without registration walls, we rely on community contributions to fund our hosting, domain registration, and continued development. Your support ensures this privacy-first platform remains available to the world indefinitely.</p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+
+

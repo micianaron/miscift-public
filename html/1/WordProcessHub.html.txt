@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Process Tools (Online & Free) | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Browse all Word Process tools. Securely convert and compress word process files entirely in your browser. 100% free and private.">
+    <link rel="canonical" href="https://miscift.com/WordProcessHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Word Process Tools (Online & Free) | Miscift">
+    <meta property="og:description" content="Browse all Word Process tools. Securely convert and compress word process files entirely in your browser. 100% free and private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/WordProcessHub">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Word Process Tools (Online & Free) | Miscift">
+    <meta name="twitter:description" content="Browse all Word Process tools. Securely convert and compress word process files entirely in your browser. 100% free and private.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Miscift Word Process Tools",
+      "url": "https://miscift.com/WordProcessHub",
+      "description": "Browse all Word Process tools. Securely convert and compress word process files entirely in your browser. 100% free and private."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main>
+        <div class="page-header">
+            <h1>Miscift <i class="fa-solid fa-file-word"></i> Word Process Hub</h1>
+        </div>
+        <div class="content-box">
+            <ul class="tool-list">
+                <li><a href="pages/word/doc-to-docx.html"><i class="fa-solid fa-file-word"></i> Doc To Docx</a></li>
+                <li><a href="pages/word/doc-to-odt.html"><i class="fa-solid fa-file-word"></i> Doc To Odt</a></li>
+                <li><a href="pages/word/doc-to-pdf.html"><i class="fa-solid fa-file-word"></i> Doc To Pdf</a></li>
+                <li><a href="pages/word/doc-to-rtf.html"><i class="fa-solid fa-file-word"></i> Doc To Rtf</a></li>
+                <li><a href="pages/word/doc-to-txt.html"><i class="fa-solid fa-file-word"></i> Doc To Txt</a></li>
+                <li><a href="pages/word/docx-to-doc.html"><i class="fa-solid fa-file-word"></i> Docx To Doc</a></li>
+                <li><a href="pages/word/docx-to-odt.html"><i class="fa-solid fa-file-word"></i> Docx To Odt</a></li>
+                <li><a href="pages/word/docx-to-pdf.html"><i class="fa-solid fa-file-word"></i> Docx To Pdf</a></li>
+                <li><a href="pages/word/docx-to-rtf.html"><i class="fa-solid fa-file-word"></i> Docx To Rtf</a></li>
+                <li><a href="pages/word/docx-to-txt.html"><i class="fa-solid fa-file-word"></i> Docx To Txt</a></li>
+                <li><a href="pages/word/odt-to-doc.html"><i class="fa-solid fa-file-word"></i> Odt To Doc</a></li>
+                <li><a href="pages/word/odt-to-docx.html"><i class="fa-solid fa-file-word"></i> Odt To Docx</a></li>
+                <li><a href="pages/word/odt-to-pdf.html"><i class="fa-solid fa-file-word"></i> Odt To Pdf</a></li>
+                <li><a href="pages/word/odt-to-rtf.html"><i class="fa-solid fa-file-word"></i> Odt To Rtf</a></li>
+                <li><a href="pages/word/odt-to-txt.html"><i class="fa-solid fa-file-word"></i> Odt To Txt</a></li>
+                <li><a href="pages/word/pdf-to-doc.html"><i class="fa-solid fa-file-word"></i> Pdf To Doc</a></li>
+                <li><a href="pages/word/pdf-to-docx.html"><i class="fa-solid fa-file-word"></i> Pdf To Docx</a></li>
+                <li><a href="pages/word/pdf-to-odt.html"><i class="fa-solid fa-file-word"></i> Pdf To Odt</a></li>
+                <li><a href="pages/word/pdf-to-rtf.html"><i class="fa-solid fa-file-word"></i> Pdf To Rtf</a></li>
+                <li><a href="pages/word/pdf-to-txt.html"><i class="fa-solid fa-file-word"></i> Pdf To Txt</a></li>
+                <li><a href="pages/word/rtf-to-doc.html"><i class="fa-solid fa-file-word"></i> Rtf To Doc</a></li>
+                <li><a href="pages/word/rtf-to-docx.html"><i class="fa-solid fa-file-word"></i> Rtf To Docx</a></li>
+                <li><a href="pages/word/rtf-to-odt.html"><i class="fa-solid fa-file-word"></i> Rtf To Odt</a></li>
+                <li><a href="pages/word/rtf-to-pdf.html"><i class="fa-solid fa-file-word"></i> Rtf To Pdf</a></li>
+                <li><a href="pages/word/rtf-to-txt.html"><i class="fa-solid fa-file-word"></i> Rtf To Txt</a></li>
+                <li><a href="pages/word/txt-to-doc.html"><i class="fa-solid fa-file-word"></i> Txt To Doc</a></li>
+                <li><a href="pages/word/txt-to-docx.html"><i class="fa-solid fa-file-word"></i> Txt To Docx</a></li>
+                <li><a href="pages/word/txt-to-odt.html"><i class="fa-solid fa-file-word"></i> Txt To Odt</a></li>
+                <li><a href="pages/word/txt-to-pdf.html"><i class="fa-solid fa-file-word"></i> Txt To Pdf</a></li>
+                <li><a href="pages/word/txt-to-rtf.html"><i class="fa-solid fa-file-word"></i> Txt To Rtf</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

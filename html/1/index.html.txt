@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Online File Converter - Convert Images, Videos, Audio & Documents | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Miscift is a 100% free online file converter. Convert images, videos, audio, documents, and archives securely in your browser without uploading to any server.">
+    <link rel="canonical" href="https://miscift.com/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Free Online File Converter - Convert Images, Videos, Audio & Documents | Miscift">
+    <meta property="og:description" content="Miscift is a 100% free online file converter. Convert images, videos, audio, documents, and archives securely in your browser without uploading to any server.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Free Online File Converter - Convert Images, Videos, Audio & Documents | Miscift">
+    <meta name="twitter:description" content="Miscift is a 100% free online file converter. Convert images, videos, audio, documents, and archives securely in your browser without uploading to any server.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Miscift File Converter",
+      "image": "https://miscift.com/assets/favicon-dark.png",
+      "url": "https://miscift.com/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "description": "Miscift is a 100% free online file converter. Convert images, videos, audio, documents, and archives securely in your browser without uploading to any server."
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Miscift",
+      "image": "https://miscift.com/assets/favicon-dark.png",
+      "url": "https://miscift.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://miscift.com/tools.html?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero">
+        <h1>Miscift File Converter</h1>
+        <p>Convert any file instantly — 100% free, private, and strictly secure in your browser.</p>
+        
+                <div style="max-width: 600px; margin: 0 auto 40px auto; position: relative;" id="search-container">
+
+            <input type="text" id="hero-search" placeholder="Search tool..." 
+                style="width: 100%; padding: 16px 24px; font-size: 17px; border: 2px solid var(--color-border); border-radius: 50px; background: var(--color-bg); color: var(--color-text); outline: none; font-family: 'Overpass', sans-serif;"
+                onfocus="this.style.borderColor='var(--color-primary)'" 
+                onblur="this.style.borderColor='var(--color-border)'"
+            >
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: var(--color-text-muted); font-size: 18px;"></i>
+        
+            <ul id="search-dropdown" style="display: none; position: absolute; top: calc(100% + 8px); left: 0; width: 100%; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: var(--shadow-lg); max-height: 350px; overflow-y: auto; list-style: none; padding: 0; margin: 0; z-index: 1000; text-align: left;"></ul>
+        </div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; max-width: 800px; margin: 0 auto;" id="category-grid">
+            <a href="imageConvertHub.html" class="category-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 130px; max-width: 160px; aspect-ratio: 1; gap: 12px; padding: 24px 16px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; text-decoration: none; color: var(--color-text); transition: all 0.2s;">
+                <i class="fa-solid fa-image" style="font-size: 28px; color: var(--color-primary);"></i>
+                <span style="font-weight: 600; font-size: 14px;">Image</span>
+            </a>
+            <a href="videoConvertHub.html" class="category-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 130px; max-width: 160px; aspect-ratio: 1; gap: 12px; padding: 24px 16px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; text-decoration: none; color: var(--color-text); transition: all 0.2s;">
+                <i class="fa-solid fa-video" style="font-size: 28px; color: var(--color-primary);"></i>
+                <span style="font-weight: 600; font-size: 14px;">Video</span>
+            </a>
+            <a href="AudioConverterHub.html" class="category-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 130px; max-width: 160px; aspect-ratio: 1; gap: 12px; padding: 24px 16px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; text-decoration: none; color: var(--color-text); transition: all 0.2s;">
+                <i class="fa-solid fa-music" style="font-size: 28px; color: var(--color-primary);"></i>
+                <span style="font-weight: 600; font-size: 14px;">Audio</span>
+            </a>
+            <a href="DocumentConverterHub.html" class="category-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 130px; max-width: 160px; aspect-ratio: 1; gap: 12px; padding: 24px 16px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; text-decoration: none; color: var(--color-text); transition: all 0.2s;">
+                <i class="fa-solid fa-file-pdf" style="font-size: 28px; color: var(--color-primary);"></i>
+                <span style="font-weight: 600; font-size: 14px;">Document</span>
+            </a>
+            <a href="ZipConvertHub.html" class="category-card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 130px; max-width: 160px; aspect-ratio: 1; gap: 12px; padding: 24px 16px; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; text-decoration: none; color: var(--color-text); transition: all 0.2s;">
+                <i class="fa-solid fa-file-zipper" style="font-size: 28px; color: var(--color-primary);"></i>
+                <span style="font-weight: 600; font-size: 14px;">Archive</span>
+            </a>
+        </div>
+
+        
+    </div>
+
+    <main>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-lock"></i>
+                <h3>Free & Secure</h3>
+                <p>We guarantee file security and privacy. All processing happens directly in your browser. Your files are never uploaded to any server.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-bolt"></i>
+                <h3>High Quality Conversions</h3>
+                <p>We use trusted open-source libraries like FFmpeg and PDF.js to ensure our conversions are of the highest quality. In most cases, you can fine-tune conversion parameters using "Advanced Settings".</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>200+ Formats Supported</h3>
+                <p>We support over 200 different conversions between Image, Video, Document, Audio, and Archive formats. No software to install and it works on any device.</p>
+            </div>
+        </div>
+    
+        
+
+        <div style="margin-top: 40px;">
+            <h2 style="text-align: center; margin-bottom: 32px; font-size: 32px;">Popular Conversion Tools</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                <a href="pages/image/png-to-jpg.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">PNG to JPG</a>
+                <a href="pages/document/pdf-to-docx.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">PDF to DOCX</a>
+                <a href="pages/video/mp4-to-avi.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">MP4 to AVI</a>
+                <a href="pages/image/jpg-to-webp.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">JPG to WebP</a>
+                <a href="pages/document/docx-to-pdf.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">DOCX to PDF</a>
+                <a href="pages/audio/mp3-to-wav.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">MP3 to WAV</a>
+                <a href="pages/image/webp-to-gif.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">WebP to GIF</a>
+                <a href="pages/image-compress/compress-png.html" style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 24px; text-align: center; text-decoration: none; color: var(--color-text); box-shadow: var(--shadow-sm); display: block; font-weight: 600;">Compress PNG</a>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px; margin-bottom: 40px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h2 style="text-align: center; margin-bottom: 32px; font-size: 32px;">Frequently Asked Questions</h2>
+            
+            <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 32px; box-shadow: var(--shadow-sm);">
+                <details style="margin-bottom: 16px; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">
+                    <summary style="font-weight: 600; font-size: 18px; cursor: pointer; color: var(--color-text);">What file formats do you support?</summary>
+                    <p style="color: var(--color-text-muted); margin-top: 12px; line-height: 1.6;">We support over 200 formats including image (JPG, PNG, WebP), video (MP4, AVI, MKV), audio (MP3, WAV), and document (PDF, DOCX) formats.</p>
+                </details>
+
+                <details style="margin-bottom: 16px; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">
+                    <summary style="font-weight: 600; font-size: 18px; cursor: pointer; color: var(--color-text);">Is this file converter truly free?</summary>
+                    <p style="color: var(--color-text-muted); margin-top: 12px; line-height: 1.6;">Yes, our online file converter is 100% free to use. There are no subscriptions, paywalls, or hidden fees. We believe in providing open access to premium conversion tools.</p>
+                </details>
+
+                <details style="margin-bottom: 16px; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">
+                    <summary style="font-weight: 600; font-size: 18px; cursor: pointer; color: var(--color-text);">Is it secure to convert files here?</summary>
+                    <p style="color: var(--color-text-muted); margin-top: 12px; line-height: 1.6;">Absolutely. Our platform processes your files securely using client-side technology. Your files stay on your device and are never transmitted to our servers.</p>
+                </details>
+
+                <details style="margin-bottom: 16px; border-bottom: 1px solid var(--color-border); padding-bottom: 16px;">
+                    <summary style="font-weight: 600; font-size: 18px; cursor: pointer; color: var(--color-text);">Do you upload my files to your servers?</summary>
+                    <p style="color: var(--color-text-muted); margin-top: 12px; line-height: 1.6;">No. All operations are performed entirely in your browser using WebAssembly. Your files never leave your device.</p>
+                </details>
+
+                <details style="margin-bottom: 0;">
+                    <summary style="font-weight: 600; font-size: 18px; cursor: pointer; color: var(--color-text);">Do I need to install any software?</summary>
+                    <p style="color: var(--color-text-muted); margin-top: 12px; line-height: 1.6;">No installation is required. Our entire suite of tools is accessible directly through your web browser, saving you time and device storage space.</p>
+                </details>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+
+    <script src="js/navigation.js?v=4"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('hero-search');
+    const dropdown = document.getElementById('search-dropdown');
+    if(!searchInput || !dropdown) return;
+
+    searchInput.setAttribute('autocomplete', 'off');
+
+    const tools = [{ name: "Aac To Flac", url: "pages/audio/aac-to-flac.html", icon: "fa-music" }, { name: "Aac To M4a", url: "pages/audio/aac-to-m4a.html", icon: "fa-music" }, { name: "Aac To Ogg", url: "pages/audio/aac-to-ogg.html", icon: "fa-music" }, { name: "Aac To Wma", url: "pages/audio/aac-to-wma.html", icon: "fa-music" }, { name: "Flac To M4a", url: "pages/audio/flac-to-m4a.html", icon: "fa-music" }, { name: "Flac To Ogg", url: "pages/audio/flac-to-ogg.html", icon: "fa-music" }, { name: "Flac To Wma", url: "pages/audio/flac-to-wma.html", icon: "fa-music" }, { name: "M4a To Wma", url: "pages/audio/m4a-to-wma.html", icon: "fa-music" }, { name: "Mp3 To Aac", url: "pages/audio/mp3-to-aac.html", icon: "fa-music" }, { name: "Mp3 To Flac", url: "pages/audio/mp3-to-flac.html", icon: "fa-music" }, { name: "Mp3 To M4a", url: "pages/audio/mp3-to-m4a.html", icon: "fa-music" }, { name: "Mp3 To Ogg", url: "pages/audio/mp3-to-ogg.html", icon: "fa-music" }, { name: "Mp3 To Wav", url: "pages/audio/mp3-to-wav.html", icon: "fa-music" }, { name: "Mp3 To Wma", url: "pages/audio/mp3-to-wma.html", icon: "fa-music" }, { name: "Ogg To M4a", url: "pages/audio/ogg-to-m4a.html", icon: "fa-music" }, { name: "Ogg To Wma", url: "pages/audio/ogg-to-wma.html", icon: "fa-music" }, { name: "Wav To Aac", url: "pages/audio/wav-to-aac.html", icon: "fa-music" }, { name: "Wav To Flac", url: "pages/audio/wav-to-flac.html", icon: "fa-music" }, { name: "Wav To M4a", url: "pages/audio/wav-to-m4a.html", icon: "fa-music" }, { name: "Wav To Ogg", url: "pages/audio/wav-to-ogg.html", icon: "fa-music" }, { name: "Wav To Wma", url: "pages/audio/wav-to-wma.html", icon: "fa-music" }, { name: "Compress Aac", url: "pages/audio-compress/compress-aac.html", icon: "fa-music" }, { name: "Compress Flac", url: "pages/audio-compress/compress-flac.html", icon: "fa-music" }, { name: "Compress M4a", url: "pages/audio-compress/compress-m4a.html", icon: "fa-music" }, { name: "Compress Mp3", url: "pages/audio-compress/compress-mp3.html", icon: "fa-music" }, { name: "Compress Ogg", url: "pages/audio-compress/compress-ogg.html", icon: "fa-music" }, { name: "Compress Wav", url: "pages/audio-compress/compress-wav.html", icon: "fa-music" }, { name: "Compress Wma", url: "pages/audio-compress/compress-wma.html", icon: "fa-music" }, { name: "Doc To Docx", url: "pages/document/doc-to-docx.html", icon: "fa-file-pdf" }, { name: "Doc To Epub", url: "pages/document/doc-to-epub.html", icon: "fa-file-pdf" }, { name: "Doc To Html", url: "pages/document/doc-to-html.html", icon: "fa-file-pdf" }, { name: "Doc To Mobi", url: "pages/document/doc-to-mobi.html", icon: "fa-file-pdf" }, { name: "Doc To Pdf", url: "pages/document/doc-to-pdf.html", icon: "fa-file-pdf" }, { name: "Doc To Rtf", url: "pages/document/doc-to-rtf.html", icon: "fa-file-pdf" }, { name: "Doc To Txt", url: "pages/document/doc-to-txt.html", icon: "fa-file-pdf" }, { name: "Docx To Doc", url: "pages/document/docx-to-doc.html", icon: "fa-file-pdf" }, { name: "Docx To Epub", url: "pages/document/docx-to-epub.html", icon: "fa-file-pdf" }, { name: "Docx To Html", url: "pages/document/docx-to-html.html", icon: "fa-file-pdf" }, { name: "Docx To Mobi", url: "pages/document/docx-to-mobi.html", icon: "fa-file-pdf" }, { name: "Docx To Pdf", url: "pages/document/docx-to-pdf.html", icon: "fa-file-pdf" }, { name: "Docx To Rtf", url: "pages/document/docx-to-rtf.html", icon: "fa-file-pdf" }, { name: "Docx To Txt", url: "pages/document/docx-to-txt.html", icon: "fa-file-pdf" }, { name: "Epub To Doc", url: "pages/document/epub-to-doc.html", icon: "fa-file-pdf" }, { name: "Epub To Docx", url: "pages/document/epub-to-docx.html", icon: "fa-file-pdf" }, { name: "Epub To Html", url: "pages/document/epub-to-html.html", icon: "fa-file-pdf" }, { name: "Epub To Mobi", url: "pages/document/epub-to-mobi.html", icon: "fa-file-pdf" }, { name: "Epub To Pdf", url: "pages/document/epub-to-pdf.html", icon: "fa-file-pdf" }, { name: "Epub To Rtf", url: "pages/document/epub-to-rtf.html", icon: "fa-file-pdf" }, { name: "Epub To Txt", url: "pages/document/epub-to-txt.html", icon: "fa-file-pdf" }, { name: "Html To Doc", url: "pages/document/html-to-doc.html", icon: "fa-file-pdf" }, { name: "Html To Docx", url: "pages/document/html-to-docx.html", icon: "fa-file-pdf" }, { name: "Html To Epub", url: "pages/document/html-to-epub.html", icon: "fa-file-pdf" }, { name: "Html To Mobi", url: "pages/document/html-to-mobi.html", icon: "fa-file-pdf" }, { name: "Html To Pdf", url: "pages/document/html-to-pdf.html", icon: "fa-file-pdf" }, { name: "Html To Rtf", url: "pages/document/html-to-rtf.html", icon: "fa-file-pdf" }, { name: "Html To Txt", url: "pages/document/html-to-txt.html", icon: "fa-file-pdf" }, { name: "Mobi To Doc", url: "pages/document/mobi-to-doc.html", icon: "fa-file-pdf" }, { name: "Mobi To Docx", url: "pages/document/mobi-to-docx.html", icon: "fa-file-pdf" }, { name: "Mobi To Epub", url: "pages/document/mobi-to-epub.html", icon: "fa-file-pdf" }, { name: "Mobi To Html", url: "pages/document/mobi-to-html.html", icon: "fa-file-pdf" }, { name: "Mobi To Pdf", url: "pages/document/mobi-to-pdf.html", icon: "fa-file-pdf" }, { name: "Mobi To Rtf", url: "pages/document/mobi-to-rtf.html", icon: "fa-file-pdf" }, { name: "Mobi To Txt", url: "pages/document/mobi-to-txt.html", icon: "fa-file-pdf" }, { name: "Pdf To Doc", url: "pages/document/pdf-to-doc.html", icon: "fa-file-pdf" }, { name: "Pdf To Docx", url: "pages/document/pdf-to-docx.html", icon: "fa-file-pdf" }, { name: "Pdf To Epub", url: "pages/document/pdf-to-epub.html", icon: "fa-file-pdf" }, { name: "Pdf To Html", url: "pages/document/pdf-to-html.html", icon: "fa-file-pdf" }, { name: "Pdf To Mobi", url: "pages/document/pdf-to-mobi.html", icon: "fa-file-pdf" }, { name: "Pdf To Rtf", url: "pages/document/pdf-to-rtf.html", icon: "fa-file-pdf" }, { name: "Pdf To Txt", url: "pages/document/pdf-to-txt.html", icon: "fa-file-pdf" }, { name: "Rtf To Doc", url: "pages/document/rtf-to-doc.html", icon: "fa-file-pdf" }, { name: "Rtf To Docx", url: "pages/document/rtf-to-docx.html", icon: "fa-file-pdf" }, { name: "Rtf To Epub", url: "pages/document/rtf-to-epub.html", icon: "fa-file-pdf" }, { name: "Rtf To Html", url: "pages/document/rtf-to-html.html", icon: "fa-file-pdf" }, { name: "Rtf To Mobi", url: "pages/document/rtf-to-mobi.html", icon: "fa-file-pdf" }, { name: "Rtf To Pdf", url: "pages/document/rtf-to-pdf.html", icon: "fa-file-pdf" }, { name: "Rtf To Txt", url: "pages/document/rtf-to-txt.html", icon: "fa-file-pdf" }, { name: "Txt To Doc", url: "pages/document/txt-to-doc.html", icon: "fa-file-pdf" }, { name: "Txt To Docx", url: "pages/document/txt-to-docx.html", icon: "fa-file-pdf" }, { name: "Txt To Epub", url: "pages/document/txt-to-epub.html", icon: "fa-file-pdf" }, { name: "Txt To Html", url: "pages/document/txt-to-html.html", icon: "fa-file-pdf" }, { name: "Txt To Mobi", url: "pages/document/txt-to-mobi.html", icon: "fa-file-pdf" }, { name: "Txt To Pdf", url: "pages/document/txt-to-pdf.html", icon: "fa-file-pdf" }, { name: "Txt To Rtf", url: "pages/document/txt-to-rtf.html", icon: "fa-file-pdf" }, { name: "Bmp To Svg", url: "pages/image/bmp-to-svg.html", icon: "fa-image" }, { name: "Bmp To Tiff", url: "pages/image/bmp-to-tiff.html", icon: "fa-image" }, { name: "Gif To Bmp", url: "pages/image/gif-to-bmp.html", icon: "fa-image" }, { name: "Gif To Svg", url: "pages/image/gif-to-svg.html", icon: "fa-image" }, { name: "Gif To Tiff", url: "pages/image/gif-to-tiff.html", icon: "fa-image" }, { name: "Jpeg To Bmp", url: "pages/image/jpeg-to-bmp.html", icon: "fa-image" }, { name: "Jpeg To Gif", url: "pages/image/jpeg-to-gif.html", icon: "fa-image" }, { name: "Jpeg To Svg", url: "pages/image/jpeg-to-svg.html", icon: "fa-image" }, { name: "Jpeg To Tiff", url: "pages/image/jpeg-to-tiff.html", icon: "fa-image" }, { name: "Jpeg To Webp", url: "pages/image/jpeg-to-webp.html", icon: "fa-image" }, { name: "Jpg To Bmp", url: "pages/image/jpg-to-bmp.html", icon: "fa-image" }, { name: "Jpg To Gif", url: "pages/image/jpg-to-gif.html", icon: "fa-image" }, { name: "Jpg To Jpeg", url: "pages/image/jpg-to-jpeg.html", icon: "fa-image" }, { name: "Jpg To Svg", url: "pages/image/jpg-to-svg.html", icon: "fa-image" }, { name: "Jpg To Tiff", url: "pages/image/jpg-to-tiff.html", icon: "fa-image" }, { name: "Jpg To Webp", url: "pages/image/jpg-to-webp.html", icon: "fa-image" }, { name: "Png To Bmp", url: "pages/image/png-to-bmp.html", icon: "fa-image" }, { name: "Png To Gif", url: "pages/image/png-to-gif.html", icon: "fa-image" }, { name: "Png To Jpeg", url: "pages/image/png-to-jpeg.html", icon: "fa-image" }, { name: "Png To Jpg", url: "pages/image/png-to-jpg.html", icon: "fa-image" }, { name: "Png To Svg", url: "pages/image/png-to-svg.html", icon: "fa-image" }, { name: "Png To Tiff", url: "pages/image/png-to-tiff.html", icon: "fa-image" }, { name: "Png To Webp", url: "pages/image/png-to-webp.html", icon: "fa-image" }, { name: "Tiff To Svg", url: "pages/image/tiff-to-svg.html", icon: "fa-image" }, { name: "Webp To Bmp", url: "pages/image/webp-to-bmp.html", icon: "fa-image" }, { name: "Webp To Gif", url: "pages/image/webp-to-gif.html", icon: "fa-image" }, { name: "Webp To Svg", url: "pages/image/webp-to-svg.html", icon: "fa-image" }, { name: "Webp To Tiff", url: "pages/image/webp-to-tiff.html", icon: "fa-image" }, { name: "Compress Bmp", url: "pages/image-compress/compress-bmp.html", icon: "fa-image" }, { name: "Compress Gif", url: "pages/image-compress/compress-gif.html", icon: "fa-image" }, { name: "Compress Jpeg", url: "pages/image-compress/compress-jpeg.html", icon: "fa-image" }, { name: "Compress Jpg", url: "pages/image-compress/compress-jpg.html", icon: "fa-image" }, { name: "Compress Png", url: "pages/image-compress/compress-png.html", icon: "fa-image" }, { name: "Compress Svg", url: "pages/image-compress/compress-svg.html", icon: "fa-image" }, { name: "Compress Tiff", url: "pages/image-compress/compress-tiff.html", icon: "fa-image" }, { name: "Compress Webp", url: "pages/image-compress/compress-webp.html", icon: "fa-image" }, { name: "Celsius To Fahrenheit", url: "pages/unit/celsius-to-fahrenheit.html", icon: "fa-scale-balanced" }, { name: "Celsius To Kelvin", url: "pages/unit/celsius-to-kelvin.html", icon: "fa-scale-balanced" }, { name: "Centimeter To Millimeter", url: "pages/unit/centimeter-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Centimeter To Yard", url: "pages/unit/centimeter-to-yard.html", icon: "fa-scale-balanced" }, { name: "Cup To Pint", url: "pages/unit/cup-to-pint.html", icon: "fa-scale-balanced" }, { name: "Fahrenheit To Kelvin", url: "pages/unit/fahrenheit-to-kelvin.html", icon: "fa-scale-balanced" }, { name: "Foot To Centimeter", url: "pages/unit/foot-to-centimeter.html", icon: "fa-scale-balanced" }, { name: "Foot To Inch", url: "pages/unit/foot-to-inch.html", icon: "fa-scale-balanced" }, { name: "Foot To Kilometer", url: "pages/unit/foot-to-kilometer.html", icon: "fa-scale-balanced" }, { name: "Foot To Mile", url: "pages/unit/foot-to-mile.html", icon: "fa-scale-balanced" }, { name: "Foot To Millimeter", url: "pages/unit/foot-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Foot To Yard", url: "pages/unit/foot-to-yard.html", icon: "fa-scale-balanced" }, { name: "Gallon To Cup", url: "pages/unit/gallon-to-cup.html", icon: "fa-scale-balanced" }, { name: "Gallon To Milliliter", url: "pages/unit/gallon-to-milliliter.html", icon: "fa-scale-balanced" }, { name: "Gallon To Pint", url: "pages/unit/gallon-to-pint.html", icon: "fa-scale-balanced" }, { name: "Gram To Kilogram", url: "pages/unit/gram-to-kilogram.html", icon: "fa-scale-balanced" }, { name: "Gram To Ounce", url: "pages/unit/gram-to-ounce.html", icon: "fa-scale-balanced" }, { name: "Gram To Pound", url: "pages/unit/gram-to-pound.html", icon: "fa-scale-balanced" }, { name: "Hour To Day", url: "pages/unit/hour-to-day.html", icon: "fa-scale-balanced" }, { name: "Inch To Centimeter", url: "pages/unit/inch-to-centimeter.html", icon: "fa-scale-balanced" }, { name: "Inch To Kilometer", url: "pages/unit/inch-to-kilometer.html", icon: "fa-scale-balanced" }, { name: "Inch To Mile", url: "pages/unit/inch-to-mile.html", icon: "fa-scale-balanced" }, { name: "Inch To Millimeter", url: "pages/unit/inch-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Inch To Yard", url: "pages/unit/inch-to-yard.html", icon: "fa-scale-balanced" }, { name: "Kilogram To Ounce", url: "pages/unit/kilogram-to-ounce.html", icon: "fa-scale-balanced" }, { name: "Kilogram To Pound", url: "pages/unit/kilogram-to-pound.html", icon: "fa-scale-balanced" }, { name: "Kilometer To Centimeter", url: "pages/unit/kilometer-to-centimeter.html", icon: "fa-scale-balanced" }, { name: "Kilometer To Millimeter", url: "pages/unit/kilometer-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Kilometer To Yard", url: "pages/unit/kilometer-to-yard.html", icon: "fa-scale-balanced" }, { name: "Liter To Cup", url: "pages/unit/liter-to-cup.html", icon: "fa-scale-balanced" }, { name: "Liter To Gallon", url: "pages/unit/liter-to-gallon.html", icon: "fa-scale-balanced" }, { name: "Liter To Milliliter", url: "pages/unit/liter-to-milliliter.html", icon: "fa-scale-balanced" }, { name: "Liter To Pint", url: "pages/unit/liter-to-pint.html", icon: "fa-scale-balanced" }, { name: "Meter To Centimeter", url: "pages/unit/meter-to-centimeter.html", icon: "fa-scale-balanced" }, { name: "Meter To Foot", url: "pages/unit/meter-to-foot.html", icon: "fa-scale-balanced" }, { name: "Meter To Inch", url: "pages/unit/meter-to-inch.html", icon: "fa-scale-balanced" }, { name: "Meter To Kilometer", url: "pages/unit/meter-to-kilometer.html", icon: "fa-scale-balanced" }, { name: "Meter To Mile", url: "pages/unit/meter-to-mile.html", icon: "fa-scale-balanced" }, { name: "Meter To Millimeter", url: "pages/unit/meter-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Meter To Yard", url: "pages/unit/meter-to-yard.html", icon: "fa-scale-balanced" }, { name: "Mile To Centimeter", url: "pages/unit/mile-to-centimeter.html", icon: "fa-scale-balanced" }, { name: "Mile To Kilometer", url: "pages/unit/mile-to-kilometer.html", icon: "fa-scale-balanced" }, { name: "Mile To Millimeter", url: "pages/unit/mile-to-millimeter.html", icon: "fa-scale-balanced" }, { name: "Mile To Yard", url: "pages/unit/mile-to-yard.html", icon: "fa-scale-balanced" }, { name: "Milliliter To Cup", url: "pages/unit/milliliter-to-cup.html", icon: "fa-scale-balanced" }, { name: "Milliliter To Pint", url: "pages/unit/milliliter-to-pint.html", icon: "fa-scale-balanced" }, { name: "Millimeter To Yard", url: "pages/unit/millimeter-to-yard.html", icon: "fa-scale-balanced" }, { name: "Minute To Day", url: "pages/unit/minute-to-day.html", icon: "fa-scale-balanced" }, { name: "Minute To Hour", url: "pages/unit/minute-to-hour.html", icon: "fa-scale-balanced" }, { name: "Pound To Ounce", url: "pages/unit/pound-to-ounce.html", icon: "fa-scale-balanced" }, { name: "Second To Day", url: "pages/unit/second-to-day.html", icon: "fa-scale-balanced" }, { name: "Second To Hour", url: "pages/unit/second-to-hour.html", icon: "fa-scale-balanced" }, { name: "Second To Minute", url: "pages/unit/second-to-minute.html", icon: "fa-scale-balanced" }, { name: "Avi To Flv", url: "pages/video/avi-to-flv.html", icon: "fa-video" }, { name: "Avi To Mkv", url: "pages/video/avi-to-mkv.html", icon: "fa-video" }, { name: "Avi To Mov", url: "pages/video/avi-to-mov.html", icon: "fa-video" }, { name: "Avi To Webm", url: "pages/video/avi-to-webm.html", icon: "fa-video" }, { name: "Avi To Wmv", url: "pages/video/avi-to-wmv.html", icon: "fa-video" }, { name: "Flv To Mkv", url: "pages/video/flv-to-mkv.html", icon: "fa-video" }, { name: "Flv To Webm", url: "pages/video/flv-to-webm.html", icon: "fa-video" }, { name: "Mkv To Webm", url: "pages/video/mkv-to-webm.html", icon: "fa-video" }, { name: "Mov To Flv", url: "pages/video/mov-to-flv.html", icon: "fa-video" }, { name: "Mov To Mkv", url: "pages/video/mov-to-mkv.html", icon: "fa-video" }, { name: "Mov To Webm", url: "pages/video/mov-to-webm.html", icon: "fa-video" }, { name: "Mov To Wmv", url: "pages/video/mov-to-wmv.html", icon: "fa-video" }, { name: "Mp4 To Avi", url: "pages/video/mp4-to-avi.html", icon: "fa-video" }, { name: "Mp4 To Flv", url: "pages/video/mp4-to-flv.html", icon: "fa-video" }, { name: "Mp4 To Mkv", url: "pages/video/mp4-to-mkv.html", icon: "fa-video" }, { name: "Mp4 To Mov", url: "pages/video/mp4-to-mov.html", icon: "fa-video" }, { name: "Mp4 To Webm", url: "pages/video/mp4-to-webm.html", icon: "fa-video" }, { name: "Mp4 To Wmv", url: "pages/video/mp4-to-wmv.html", icon: "fa-video" }, { name: "Wmv To Flv", url: "pages/video/wmv-to-flv.html", icon: "fa-video" }, { name: "Wmv To Mkv", url: "pages/video/wmv-to-mkv.html", icon: "fa-video" }, { name: "Wmv To Webm", url: "pages/video/wmv-to-webm.html", icon: "fa-video" }, { name: "Compress Avi", url: "pages/video-compress/compress-avi.html", icon: "fa-video" }, { name: "Compress Flv", url: "pages/video-compress/compress-flv.html", icon: "fa-video" }, { name: "Compress Mkv", url: "pages/video-compress/compress-mkv.html", icon: "fa-video" }, { name: "Compress Mov", url: "pages/video-compress/compress-mov.html", icon: "fa-video" }, { name: "Compress Mp4", url: "pages/video-compress/compress-mp4.html", icon: "fa-video" }, { name: "Compress Webm", url: "pages/video-compress/compress-webm.html", icon: "fa-video" }, { name: "Compress Wmv", url: "pages/video-compress/compress-wmv.html", icon: "fa-video" }, { name: "Doc To Docx", url: "pages/word/doc-to-docx.html", icon: "fa-file-pdf" }, { name: "Doc To Odt", url: "pages/word/doc-to-odt.html", icon: "fa-file-pdf" }, { name: "Doc To Pdf", url: "pages/word/doc-to-pdf.html", icon: "fa-file-pdf" }, { name: "Doc To Rtf", url: "pages/word/doc-to-rtf.html", icon: "fa-file-pdf" }, { name: "Doc To Txt", url: "pages/word/doc-to-txt.html", icon: "fa-file-pdf" }, { name: "Docx To Doc", url: "pages/word/docx-to-doc.html", icon: "fa-file-pdf" }, { name: "Docx To Odt", url: "pages/word/docx-to-odt.html", icon: "fa-file-pdf" }, { name: "Docx To Pdf", url: "pages/word/docx-to-pdf.html", icon: "fa-file-pdf" }, { name: "Docx To Rtf", url: "pages/word/docx-to-rtf.html", icon: "fa-file-pdf" }, { name: "Docx To Txt", url: "pages/word/docx-to-txt.html", icon: "fa-file-pdf" }, { name: "Odt To Doc", url: "pages/word/odt-to-doc.html", icon: "fa-file-pdf" }, { name: "Odt To Docx", url: "pages/word/odt-to-docx.html", icon: "fa-file-pdf" }, { name: "Odt To Pdf", url: "pages/word/odt-to-pdf.html", icon: "fa-file-pdf" }, { name: "Odt To Rtf", url: "pages/word/odt-to-rtf.html", icon: "fa-file-pdf" }, { name: "Odt To Txt", url: "pages/word/odt-to-txt.html", icon: "fa-file-pdf" }, { name: "Pdf To Doc", url: "pages/word/pdf-to-doc.html", icon: "fa-file-pdf" }, { name: "Pdf To Docx", url: "pages/word/pdf-to-docx.html", icon: "fa-file-pdf" }, { name: "Pdf To Odt", url: "pages/word/pdf-to-odt.html", icon: "fa-file-pdf" }, { name: "Pdf To Rtf", url: "pages/word/pdf-to-rtf.html", icon: "fa-file-pdf" }, { name: "Pdf To Txt", url: "pages/word/pdf-to-txt.html", icon: "fa-file-pdf" }, { name: "Rtf To Doc", url: "pages/word/rtf-to-doc.html", icon: "fa-file-pdf" }, { name: "Rtf To Docx", url: "pages/word/rtf-to-docx.html", icon: "fa-file-pdf" }, { name: "Rtf To Odt", url: "pages/word/rtf-to-odt.html", icon: "fa-file-pdf" }, { name: "Rtf To Pdf", url: "pages/word/rtf-to-pdf.html", icon: "fa-file-pdf" }, { name: "Rtf To Txt", url: "pages/word/rtf-to-txt.html", icon: "fa-file-pdf" }, { name: "Txt To Doc", url: "pages/word/txt-to-doc.html", icon: "fa-file-pdf" }, { name: "Txt To Docx", url: "pages/word/txt-to-docx.html", icon: "fa-file-pdf" }, { name: "Txt To Odt", url: "pages/word/txt-to-odt.html", icon: "fa-file-pdf" }, { name: "Txt To Pdf", url: "pages/word/txt-to-pdf.html", icon: "fa-file-pdf" }, { name: "Txt To Rtf", url: "pages/word/txt-to-rtf.html", icon: "fa-file-pdf" }, { name: "7z To Bz2", url: "pages/zip/7z-to-bz2.html", icon: "fa-file-zipper" }, { name: "7z To Gz", url: "pages/zip/7z-to-gz.html", icon: "fa-file-zipper" }, { name: "7z To Tar", url: "pages/zip/7z-to-tar.html", icon: "fa-file-zipper" }, { name: "Gz To Bz2", url: "pages/zip/gz-to-bz2.html", icon: "fa-file-zipper" }, { name: "Rar To 7z", url: "pages/zip/rar-to-7z.html", icon: "fa-file-zipper" }, { name: "Rar To Bz2", url: "pages/zip/rar-to-bz2.html", icon: "fa-file-zipper" }, { name: "Rar To Gz", url: "pages/zip/rar-to-gz.html", icon: "fa-file-zipper" }, { name: "Rar To Tar", url: "pages/zip/rar-to-tar.html", icon: "fa-file-zipper" }, { name: "Tar To Bz2", url: "pages/zip/tar-to-bz2.html", icon: "fa-file-zipper" }, { name: "Tar To Gz", url: "pages/zip/tar-to-gz.html", icon: "fa-file-zipper" }, { name: "Zip To 7z", url: "pages/zip/zip-to-7z.html", icon: "fa-file-zipper" }, { name: "Zip To Bz2", url: "pages/zip/zip-to-bz2.html", icon: "fa-file-zipper" }, { name: "Zip To Gz", url: "pages/zip/zip-to-gz.html", icon: "fa-file-zipper" }, { name: "Zip To Rar", url: "pages/zip/zip-to-rar.html", icon: "fa-file-zipper" }, { name: "Zip To Tar", url: "pages/zip/zip-to-tar.html", icon: "fa-file-zipper" }];
+
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if(query.length === 0) {
+            dropdown.style.display = 'none';
+            return;
+        }
+        
+        const results = tools.filter(t => t.name.toLowerCase().includes(query) || t.name.replace(/\s+/g, '').toLowerCase().includes(query.replace(/\s+/g, '')));
+        
+        if(results.length > 0) {
+            dropdown.innerHTML = results.map((t, i) => {
+                let border = i === results.length - 1 ? 'none' : '1px solid var(--color-border)';
+                return `<li style="margin: 0; padding: 0;">
+                    <a href="${t.url}" style="display: flex; align-items: center; padding: 14px 20px; color: var(--color-text); text-decoration: none; border-bottom: ${border}; transition: background 0.2s;">
+                        <i class="fa-solid ${t.icon}" style="color: var(--color-primary); margin-right: 14px; width: 20px; text-align: center; font-size: 18px;"></i>
+                        <span style="font-weight: 600; font-size: 15px;">${t.name}</span>
+                    </a>
+                </li>`;
+            }).join('');
+            
+            dropdown.querySelectorAll('a').forEach(a => {
+                a.addEventListener('mouseenter', () => a.style.background = 'var(--color-bg)');
+                a.addEventListener('mouseleave', () => a.style.background = 'transparent');
+            });
+            
+            dropdown.style.display = 'block';
+        } else {
+            dropdown.innerHTML = `<li style="padding: 16px 20px; color: var(--color-text-muted); text-align: center; font-weight: 500;">No tools found for "${e.target.value}"</li>`;
+            dropdown.style.display = 'block';
+        }
+    });
+
+    document.addEventListener('click', (e) => {
+        if(!document.getElementById('search-container').contains(e.target)) {
+            dropdown.style.display = 'none';
+        }
+    });
+    
+    searchInput.addEventListener('focus', () => {
+        if(searchInput.value.trim().length > 0) {
+            searchInput.dispatchEvent(new Event('input'));
+        }
+    });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

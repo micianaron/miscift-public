@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">Terms of Service</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">Usage Guidelines & Conditions</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Welcome to Miscift. By accessing or using our website and its associated suite of file conversion tools, you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, you are explicitly prohibited from utilizing our platform and must discontinue use immediately.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Miscift provides a free, client-side file conversion utility powered by WebAssembly. Our tools are provided entirely 'as is' and 'as available', without any express or implied warranties of any kind. We do not guarantee that our tools will perfectly process every single file, nor do we guarantee uninterrupted service.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">You are solely responsible for the files you choose to process using our platform. Because all conversions occur locally on your hardware, you retain full ownership, copyright, and liability for all data you manipulate. We claim absolutely no ownership rights over your input or output files.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Users must not utilize our platform to process, generate, or distribute illegal content, malware, or materials that violate intellectual property rights. While we cannot monitor your local processing, any discovered misuse of our infrastructure will result in an immediate and permanent ban from accessing the site.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We grant you a limited, non-exclusive, non-transferable, and revocable license to access and use our website for personal or professional file conversion purposes. You may not attempt to reverse engineer, decompile, or extract the source code of our WebAssembly modules for commercial redistribution.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">The Miscift name, logo, UI design, and all original structural code are the exclusive intellectual property of our organization. You may not scrape, clone, or duplicate our website's layout or functionality to create a competing service without express written permission.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our service is provided completely free of charge, with no registration required. However, we reserve the right to modify, suspend, or discontinue any aspect of the service at any time, with or without notice. We will not be held liable to you or any third party for any modification or cessation of the platform.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">In no event shall Miscift, its developers, or its affiliates be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our tools. This includes, but is not limited to, data loss, corrupted files, or loss of profits resulting from an unsuccessful conversion.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because our tools run entirely in your web browser, the performance and success of your conversions are heavily dependent on your own hardware capabilities and operating system stability. We cannot be held responsible for browser crashes or memory exhaustion caused by attempting to process excessively large files on low-end devices.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Users are strictly prohibited from attempting to bypass any security measures, rate limits, or file size restrictions implemented on the platform. Automated scraping, bot access, or the deployment of denial-of-service attacks against our static hosting infrastructure will be aggressively mitigated and reported to authorities.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you choose to voluntarily support our project via financial donations, you acknowledge that these are non-refundable gifts given freely to support server maintenance and development. Donations do not grant you any equity, voting rights, or premium privileges within the Miscift ecosystem.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We make no warranties regarding the absolute mathematical perfection of our conversion algorithms. While we strive for lossless quality wherever possible, certain format conversions (such as PNG to JPG or WAV to MP3) inherently involve data loss. You accept this reality when utilizing lossy compression codecs.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">These Terms of Service shall be governed by and construed in accordance with the laws of our operating jurisdiction, without regard to its conflict of law provisions. Any legal disputes arising from the use of our platform must be resolved exclusively in the designated local courts.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We reserve the right to update or modify these Terms of Service at any time. Significant changes will be reflected directly on this page, and your continued use of the platform following the posting of any changes constitutes your binding acceptance of the updated terms.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If any provision of these Terms is found to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render these Terms unenforceable or invalid as a whole. The remaining provisions will continue in full force and effect.</p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

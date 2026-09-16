@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    <meta name="description" content="The page you are looking for does not exist.">
+    
+    <link rel="stylesheet" href="/css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 100px 20px; text-align: center; background: var(--color-surface); height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="font-size: 80px; font-weight: 800; margin-bottom: 16px; color: var(--color-primary);">404</h1>
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 24px;">Page Not Found</h2>
+        <p style="color: var(--color-text-muted); font-size: 18px; max-width: 500px; margin: 0 auto 40px auto; line-height: 1.6;">
+            Looks like you're lost in the cloud... but don't worry, your files are safe locally. The tool or page you're looking for doesn't exist or was moved.
+        </p>
+        <a href="/" class="btn btn-primary" style="padding: 14px 32px; font-size: 18px; border-radius: 8px; font-weight: 700; text-decoration: none;"><i class="fa-solid fa-home" style="margin-right: 8px;"></i> Return Home</a>
+    </div>
+    <script src="/js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

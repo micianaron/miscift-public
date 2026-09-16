@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Miscift - Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">Support Miscift</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">Fund the Serverless Revolution</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Miscift is, and always will be, completely free to use. We do not hide our advanced settings behind paywalls, we do not require expensive monthly subscriptions, and we do not forcefully inject watermarks into your converted documents. We believe that privacy-first utilities should be universally accessible.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">However, maintaining and developing a free platform is not free. While our client-side architecture saves us from paying massive AWS computing bills for video rendering, we still incur significant operational costs. This includes global CDN bandwidth, domain registrations, security audits, and dedicated engineering time.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because we refuse to monetize your personal data, and while we use modest advertising to help cover costs, we also rely on the voluntary financial support of our community to keep the platform alive and actively developed.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If Miscift has saved you time, protected your confidential corporate data, or simply provided a seamless conversion experience without the usual internet friction, we humbly ask you to consider making a financial contribution. Every single dollar goes directly back into the project.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Your donations directly fund the development of new features. Our roadmap includes adding support for highly requested, computationally heavy formats like RAW camera images, complex CAD blueprints, and advanced localized OCR (Optical Character Recognition) for scanned PDFs.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We accept donations via a variety of secure, privacy-respecting platforms. You can contribute via our secure Stripe payment link below.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Every contribution, no matter the size, directly helps keep this project alive and actively developed.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you represent an organization interested in supporting our project, please reach out via email and we can discuss how to acknowledge your contribution.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Transparency is a core value of the Miscift project. We are committed to using all community contributions responsibly towards hosting, development, and continued improvement of the platform.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We understand that not everyone is in a financial position to donate. If you cannot contribute monetarily, you can still massively support our mission by sharing Miscift on social media, linking to us from your personal blog, or recommending us to your colleagues and friends.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Word-of-mouth growth is the absolute lifeblood of our platform. Every time you link to Miscift on a forum, Reddit, or StackOverflow, you actively help us outrank the massive, corporate, privacy-invasive conversion sites on Google Search.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you are a developer, contributing code, bug fixes, or performance optimizations to the open-source WebAssembly libraries we utilize is another incredible way to support the ecosystem. A rising tide lifts all boats in the open-source community.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Please note that donations are purely voluntary gifts given to support the project. They do not constitute a legally binding service contract, nor do they grant you equity, voting rights, or special premium features that are hidden from the general public.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are grateful to every user who chooses to support us. Your generosity proves that it is possible to build sustainable, privacy-respecting software on the internet.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Thank you for believing in the Miscift vision. Together, we are proving that the future of the web is decentralized, private, and entirely user-controlled.</p>
+
+        </div>
+            <div style="text-align: center; padding: 40px; background: var(--color-bg); border-radius: 8px; border: 1px solid var(--color-border); margin-bottom: 40px;">
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Support the Project</h3>
+            <p style="color: var(--color-text-muted); margin-bottom: 24px;">Your contribution helps keep Miscift free and private forever.</p>
+            <a href="https://donate.stripe.com/28E4gBezV4Ph01W2pBgw001" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="donate-stripe-btn" style="display: inline-block; padding: 16px 32px; font-size: 18px; border-radius: 8px; font-weight: 700; text-decoration: none; color: white; cursor: pointer;"><i class="fas fa-heart" style="margin-right: 8px;"></i> Support Us via Stripe</a>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

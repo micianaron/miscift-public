@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Converter Tools (Online & Free) | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Browse all Audio Converter tools. Securely convert and compress audio converter files entirely in your browser. 100% free and private.">
+    <link rel="canonical" href="https://miscift.com/AudioConverterHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Audio Converter Tools (Online & Free) | Miscift">
+    <meta property="og:description" content="Browse all Audio Converter tools. Securely convert and compress audio converter files entirely in your browser. 100% free and private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/AudioConverterHub">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Audio Converter Tools (Online & Free) | Miscift">
+    <meta name="twitter:description" content="Browse all Audio Converter tools. Securely convert and compress audio converter files entirely in your browser. 100% free and private.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Miscift Audio Converter Tools",
+      "url": "https://miscift.com/AudioConverterHub",
+      "description": "Browse all Audio Converter tools. Securely convert and compress audio converter files entirely in your browser. 100% free and private."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main>
+        <div class="page-header">
+            <h1>Miscift Audio Converter Hub</h1>
+        </div>
+        <div class="content-box">
+            <ul class="tool-list">
+                <li><a href="pages/audio/aac-to-flac.html"><i class="fa-solid fa-file-audio"></i> Aac To Flac</a></li>
+                <li><a href="pages/audio/aac-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Aac To M4A</a></li>
+                <li><a href="pages/audio/aac-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Aac To Ogg</a></li>
+                <li><a href="pages/audio/aac-to-wma.html"><i class="fa-solid fa-file-audio"></i> Aac To Wma</a></li>
+                <li><a href="pages/audio/flac-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Flac To M4A</a></li>
+                <li><a href="pages/audio/flac-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Flac To Ogg</a></li>
+                <li><a href="pages/audio/flac-to-wma.html"><i class="fa-solid fa-file-audio"></i> Flac To Wma</a></li>
+                <li><a href="pages/audio/m4a-to-wma.html"><i class="fa-solid fa-file-audio"></i> M4A To Wma</a></li>
+                <li><a href="pages/audio/mp3-to-aac.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Aac</a></li>
+                <li><a href="pages/audio/mp3-to-flac.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Flac</a></li>
+                <li><a href="pages/audio/mp3-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Mp3 To M4A</a></li>
+                <li><a href="pages/audio/mp3-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Ogg</a></li>
+                <li><a href="pages/audio/mp3-to-wav.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Wav</a></li>
+                <li><a href="pages/audio/mp3-to-wma.html"><i class="fa-solid fa-file-audio"></i> Mp3 To Wma</a></li>
+                <li><a href="pages/audio/ogg-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Ogg To M4A</a></li>
+                <li><a href="pages/audio/ogg-to-wma.html"><i class="fa-solid fa-file-audio"></i> Ogg To Wma</a></li>
+                <li><a href="pages/audio/wav-to-aac.html"><i class="fa-solid fa-file-audio"></i> Wav To Aac</a></li>
+                <li><a href="pages/audio/wav-to-flac.html"><i class="fa-solid fa-file-audio"></i> Wav To Flac</a></li>
+                <li><a href="pages/audio/wav-to-m4a.html"><i class="fa-solid fa-file-audio"></i> Wav To M4A</a></li>
+                <li><a href="pages/audio/wav-to-ogg.html"><i class="fa-solid fa-file-audio"></i> Wav To Ogg</a></li>
+                <li><a href="pages/audio/wav-to-wma.html"><i class="fa-solid fa-file-audio"></i> Wav To Wma</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+
+

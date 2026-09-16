@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compress Tools (Online & Free) | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Browse all Image Compress tools. Securely convert and compress image compress files entirely in your browser. 100% free and private.">
+    <link rel="canonical" href="https://miscift.com/imageCompressHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Image Compress Tools (Online & Free) | Miscift">
+    <meta property="og:description" content="Browse all Image Compress tools. Securely convert and compress image compress files entirely in your browser. 100% free and private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/imageCompressHub">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Image Compress Tools (Online & Free) | Miscift">
+    <meta name="twitter:description" content="Browse all Image Compress tools. Securely convert and compress image compress files entirely in your browser. 100% free and private.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Miscift Image Compress Tools",
+      "url": "https://miscift.com/imageCompressHub",
+      "description": "Browse all Image Compress tools. Securely convert and compress image compress files entirely in your browser. 100% free and private."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main>
+        <div class="page-header">
+            <h1>Miscift <i class="fa-solid fa-compress"></i> Image Compress Hub</h1>
+        </div>
+        <div class="content-box">
+            <ul class="tool-list">
+                <li><a href="pages/image-compress/compress-png.html"><i class="fa-solid fa-compress"></i> Compress PNG</a></li>
+                <li><a href="pages/image-compress/compress-jpg.html"><i class="fa-solid fa-compress"></i> Compress JPG</a></li>
+                <li><a href="pages/image-compress/compress-jpeg.html"><i class="fa-solid fa-compress"></i> Compress JPEG</a></li>
+                <li><a href="pages/image-compress/compress-webp.html"><i class="fa-solid fa-compress"></i> Compress WEBP</a></li>
+                <li><a href="pages/image-compress/compress-gif.html"><i class="fa-solid fa-compress"></i> Compress GIF</a></li>
+                <li><a href="pages/image-compress/compress-bmp.html"><i class="fa-solid fa-compress"></i> Compress BMP</a></li>
+                <li><a href="pages/image-compress/compress-tiff.html"><i class="fa-solid fa-compress"></i> Compress TIFF</a></li>
+                <li><a href="pages/image-compress/compress-svg.html"><i class="fa-solid fa-compress"></i> Compress SVG</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

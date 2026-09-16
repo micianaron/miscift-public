@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Status - Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">System Status</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">Real-Time Operational Metrics</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Welcome to the Miscift System Status dashboard. Transparency is a fundamental pillar of our engineering ethos, and we utilize this page to provide real-time updates regarding the operational health, uptime, and performance metrics of our global hosting infrastructure.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because Miscift operates on a decentralized, client-side WebAssembly architecture, our definition of 'uptime' is vastly different from traditional cloud-based conversion services. We do not have centralized rendering servers that can crash under heavy load or suffer from CPU exhaustion during peak traffic hours.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Instead, our 'backend' is actually your local device's hardware. Therefore, as long as our static frontend files (the HTML, CSS, JavaScript, and .wasm binaries) are successfully delivered to your browser, the platform has a 100% operational success rate. The actual conversion never fails due to our servers.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">To guarantee the flawless delivery of these static assets, we deploy our entire platform across a highly resilient, globally distributed Content Delivery Network (CDN). This CDN utilizes hundreds of edge nodes located in data centers across every major continent, ensuring lightning-fast load times regardless of your geographic location.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">This decentralized CDN architecture makes Miscift incredibly resilient to Distributed Denial of Service (DDoS) attacks. Because there is no central database to overwhelm, malicious traffic is effortlessly absorbed and mitigated by our CDN providers at the network edge.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">In the highly unlikely event of a regional CDN outage (such as a major undersea cable cut or a localized ISP failure), traffic is instantly and automatically routed to the next nearest operational data center via advanced Anycast DNS routing protocols. This ensures virtually 99.999% uptime for the platform.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">When we deploy major platform updates, push new WebAssembly codecs, or redesign UI components, we utilize zero-downtime deployment strategies. We push immutable builds to our CDN, ensuring that users currently on the site experience absolutely no interruption to their active workflow.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If a critical bug is discovered within a specific conversion tool (for example, a memory leak occurring exclusively when converting massive TIFF files on Safari), we will immediately post an incident report here. The specific tool may be temporarily disabled while our engineering team pushes a hotfix.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We actively monitor global browser updates. Occasionally, major updates to Chrome, Firefox, or Safari may introduce unexpected changes to how WebAssembly memory is allocated, which can temporarily impact performance. We track these regressions closely and post guidance on this page if user action is required.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For enterprise users who rely on Miscift for daily critical workflows, we highly recommend bookmarking this status page. While outages are extraordinarily rare due to our serverless architecture, this is the definitive source of truth for all operational updates.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because we do not rely on fragile database connections or complex microservices, the simplicity of our static architecture is our greatest operational strength.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you are experiencing issues accessing the site or executing a conversion, and this page indicates that all systems are fully operational, the issue is highly likely related to a localized network block (such as a corporate firewall blocking .wasm downloads) or a specific browser extension (like an aggressive adblocker) interfering with our scripts.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">In such cases, we recommend attempting the conversion in an Incognito/Private browsing window with all extensions disabled, or attempting to access the site from a different network connection to isolate the variable causing the failure.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">When an issue does occur, we believe in transparency, and will detail what happened and how we resolved it on this page.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Thank you for trusting Miscift with your critical file conversion tasks. We remain fully committed to maintaining the fastest, most reliable, and most secure static infrastructure on the modern web.</p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

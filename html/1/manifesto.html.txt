@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Serverless Manifesto | Why We Built Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Why we built a 100% client-side file converter. The cloud is broken, privacy is dead, and WebAssembly is the future. Read the Miscift manifesto.">
+    <link rel="canonical" href="https://miscift.com/manifesto">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="The Serverless Manifesto | Why We Built Miscift">
+    <meta property="og:description" content="Why we built a 100% client-side file converter. The cloud is broken, privacy is dead, and WebAssembly is the future.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://miscift.com/manifesto">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Serverless Manifesto">
+    <meta name="twitter:description" content="Why we built a 100% client-side file converter. The cloud is broken, privacy is dead, and WebAssembly is the future.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 80px 20px; text-align: center; background: linear-gradient(135deg, var(--color-bg) 0%, rgba(114,124,245,0.1) 100%); border-bottom: 1px solid var(--color-border);">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px; letter-spacing: -1px;">The Serverless Manifesto</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px; max-width: 600px; margin: 0 auto;">Why we built a file converter that refuses to upload your data.</p>
+    </div>
+
+    <main class="container" style="max-width: 800px; margin: 60px auto; padding: 0 20px;">
+        <article style="font-size: 18px; line-height: 1.8; color: var(--color-text);">
+            <p>For the last decade, the internet has operated on a fundamentally broken assumption: <strong>If you want to process a file, you must upload it to a server.</strong></p>
+
+            <p>Need to convert a sensitive corporate PDF? Upload it. Want to compress a private family video? Upload it. Need to resize an unreleased UI mockup? Upload it.</p>
+
+            <p>Every single day, millions of people blindly hand over their most confidential documents, proprietary designs, and intimate photos to random "Free Online Converter" websites. They wait in agonizing upload queues, cross their fingers that the server doesn't crash, and blindly trust that the company will actually delete their files "after 24 hours" as promised in a buried privacy policy.</p>
+
+            <h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">The Cloud is a Privacy Nightmare</h2>
+            
+            <p>We realized that the traditional cloud-conversion model is not just slow—it is an unacceptable security vulnerability. When you upload a file to a remote server, you lose cryptographic sovereignty over your data. It becomes susceptible to Man-in-the-Middle (MitM) interception, server-side data breaches, and silent data-harvesting policies.</p>
+
+            <p>We asked ourselves a simple question: <em>Why are we sending 2 gigabytes of video to a server in Frankfurt just to convert it to an MP3, when the smartphone in your pocket has more processing power than a 2015 supercomputer?</em></p>
+
+            <h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">Enter WebAssembly (Wasm)</h2>
+
+            <p>Miscift was built to kill the upload bar. We utilized advanced <strong>WebAssembly (Wasm)</strong> technology to compile enterprise-grade processing engines—like FFmpeg and PDF.js—directly into browser-executable code.</p>
+
+            <p>When you drag a file into Miscift, it doesn't go to a server. It is loaded directly into your local RAM. The conversion happens entirely on your own CPU, utilizing your own hardware, strictly inside the secure sandbox of your web browser.</p>
+
+            <ul style="margin: 30px 0; padding-left: 20px; color: var(--color-text-muted);">
+                <li style="margin-bottom: 12px;"><strong>Zero Uploads:</strong> Because your data never traverses the internet, conversion speeds are limited only by your local hardware, not your Wi-Fi bandwidth.</li>
+                <li style="margin-bottom: 12px;"><strong>Zero Data Retention:</strong> There is no "24-hour deletion policy" because we literally possess nothing to delete.</li>
+                <li style="margin-bottom: 12px;"><strong>Absolute Sovereignty:</strong> Miscift natively complies with the strictest corporate firewalls, HIPAA, and GDPR environments because the payload never leaves the workstation.</li>
+            </ul>
+
+            <h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">The Future is Local</h2>
+
+            <p>We believe that privacy should be the default architectural state of the web, not a premium feature hidden behind a /month subscription. We believe that tools should empower the hardware you already own, rather than bottlenecking you through centralized cloud queues.</p>
+
+            <p>Miscift is our proof of concept. Over 200 file conversion tools, functioning at native speeds, requiring zero server uploads, and completely free to the world.</p>
+
+            <p>Stop uploading your life to the cloud. Process it locally.</p>
+
+            <div style="margin-top: 60px; padding: 40px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; text-align: center;">
+                <h3 style="font-size: 24px; font-weight: 800; margin-bottom: 16px;">Support the Serverless Revolution</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 24px;">Miscift is community-funded. If this project has saved you time or protected your data, please consider supporting our hosting costs.</p>
+                <a href="https://donate.stripe.com/28E4gBezV4Ph01W2pBgw001" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-block; padding: 14px 32px; font-size: 18px; border-radius: 8px; font-weight: 700; text-decoration: none;"><i class="fas fa-heart" style="margin-right: 8px;"></i> Support Us via Stripe</a>
+            </div>
+        </article>
+    </main>
+
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+

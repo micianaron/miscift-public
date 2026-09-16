@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zip Convert Tools (Online & Free) | Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <meta name="description" content="Browse all Zip Convert tools. Securely convert and compress zip convert files entirely in your browser. 100% free and private.">
+    <link rel="canonical" href="https://miscift.com/ZipConvertHub">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <meta property="og:title" content="Zip Convert Tools (Online & Free) | Miscift">
+    <meta property="og:description" content="Browse all Zip Convert tools. Securely convert and compress zip convert files entirely in your browser. 100% free and private.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://miscift.com/ZipConvertHub">
+    <meta property="og:site_name" content="Miscift">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Zip Convert Tools (Online & Free) | Miscift">
+    <meta name="twitter:description" content="Browse all Zip Convert tools. Securely convert and compress zip convert files entirely in your browser. 100% free and private.">
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Miscift Zip Convert Tools",
+      "url": "https://miscift.com/ZipConvertHub",
+      "description": "Browse all Zip Convert tools. Securely convert and compress zip convert files entirely in your browser. 100% free and private."
+    }
+    </script>
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <main>
+        <div class="page-header">
+            <h1>Miscift Zip Convert Hub</h1>
+        </div>
+        <div class="content-box">
+            <ul class="tool-list">
+                <li><a href="pages/zip/7z-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Bz2</a></li>
+                <li><a href="pages/zip/7z-to-gz.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Gz</a></li>
+                <li><a href="pages/zip/7z-to-tar.html"><i class="fa-solid fa-file-zipper"></i> 7Z To Tar</a></li>
+                <li><a href="pages/zip/gz-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Gz To Bz2</a></li>
+                <li><a href="pages/zip/rar-to-7z.html"><i class="fa-solid fa-file-zipper"></i> Rar To 7Z</a></li>
+                <li><a href="pages/zip/rar-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Rar To Bz2</a></li>
+                <li><a href="pages/zip/rar-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Rar To Gz</a></li>
+                <li><a href="pages/zip/rar-to-tar.html"><i class="fa-solid fa-file-zipper"></i> Rar To Tar</a></li>
+                <li><a href="pages/zip/tar-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Tar To Bz2</a></li>
+                <li><a href="pages/zip/tar-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Tar To Gz</a></li>
+                <li><a href="pages/zip/zip-to-7z.html"><i class="fa-solid fa-file-zipper"></i> Zip To 7Z</a></li>
+                <li><a href="pages/zip/zip-to-bz2.html"><i class="fa-solid fa-file-zipper"></i> Zip To Bz2</a></li>
+                <li><a href="pages/zip/zip-to-gz.html"><i class="fa-solid fa-file-zipper"></i> Zip To Gz</a></li>
+                <li><a href="pages/zip/zip-to-rar.html"><i class="fa-solid fa-file-zipper"></i> Zip To Rar</a></li>
+                <li><a href="pages/zip/zip-to-tar.html"><i class="fa-solid fa-file-zipper"></i> Zip To Tar</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Miscift. All rights reserved.
+    </footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+
+

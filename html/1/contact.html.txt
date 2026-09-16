@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Miscift</title>
+    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+
+    
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center;">
+        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">Contact Us</h1>
+        <p style="color: var(--color-text-muted); font-size: 20px;">We are here to help</p>
+    </div>
+
+    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">At Miscift, we value open communication and transparency with our user base. While our platform is designed to be as intuitive and seamless as possible, we understand that technical issues, feature requests, and partnership inquiries occasionally arise. We do our best to respond to every message personally.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Before reaching out to our support staff, we strongly encourage you to review our comprehensive FAQ section and our detailed API documentation. The vast majority of common issues, particularly regarding browser memory limitations and specific format constraints, are thoroughly documented and resolved within those resources.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you are experiencing a failed conversion, please understand that because our entire engine runs via client-side WebAssembly, our support team cannot 'see' your error logs on our backend servers. We will need you to provide your browser version, operating system, and the specific file formats you are attempting to process.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For bug reports and technical glitches, providing a screen recording or a screenshot of the browser console (accessible via F12) is incredibly helpful. This allows our engineering team to rapidly diagnose whether the issue is a bug within our Wasm compiler or a compatibility issue with your specific hardware.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are incredibly receptive to new feature requests. If there is a specific obscure file format, audio codec, or unit conversion that you desperately need for your workflow, please let us know. We actively prioritize our development roadmap based entirely on aggregate community feedback and daily search volume.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For organizations interested in integrating client-side conversion into their own workflows, feel free to reach out and we can discuss possibilities.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you are a member of the press or a technology blogger looking to feature Miscift, feel free to reach out. We are happy to answer questions about our privacy-first approach.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Security researchers and ethical hackers are strongly encouraged to contact us regarding any discovered vulnerabilities. While our static, client-side architecture minimizes the attack surface drastically, we take all responsible disclosures seriously and will work with you to patch any potential XSS or CSP bypass exploits.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We aim to respond to inquiries as quickly as possible. Because we are a small, community-funded project, response times may vary. We appreciate your patience.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Please note that we absolutely will not respond to legal threats, DMCA takedown notices, or copyright infringement claims regarding specific user files. Because we do not host, store, or transmit user payloads, it is technologically impossible for us to remove or censor the content you are processing locally on your own machine.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">For general inquiries, partnership proposals, or media requests, please email us directly at micianaron@gmail.com. We politely request that you do not send us physical mail, as we operate as a fully remote, decentralized engineering collective without a central corporate headquarters.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you wish to contribute to the open-source libraries that power our platform (such as FFmpeg or ImageMagick), we highly encourage you to engage directly with those communities on GitHub. Miscift relies heavily on the tireless work of open-source maintainers globally.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We may post platform updates on our website. For technical support, please use email rather than social media.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Thank you for choosing Miscift. We are incredibly proud of the privacy-first tool we have built, and we rely entirely on users like you to help us refine and perfect the ultimate serverless file conversion experience.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">To reach out, please email us directly. We look forward to hearing from you.</p>
+
+        </div>
+            <div style="text-align: center; padding: 40px; background: var(--color-bg); border-radius: 8px; border: 1px solid var(--color-border); margin-bottom: 40px;">
+            <i class="fa-solid fa-envelope" style="font-size: 48px; color: var(--color-primary); margin-bottom: 16px;"></i>
+            <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 16px;">Email Us Directly</h3>
+            <p style="color: var(--color-text-muted); margin-bottom: 24px;">For all inquiries, support, and feature requests, please reach out to us at:</p>
+            <a href="mailto:micianaron@gmail.com" style="font-size: 24px; font-weight: 800; color: var(--color-primary); text-decoration: none;">micianaron@gmail.com</a>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+

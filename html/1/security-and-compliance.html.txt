@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- miscift trust block -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Miscift",
+  "url": "https://miscift.com",
+  "email": "miocianaron@gmail.com",
+  "foundingDate": "2026",
+  "logo": "https://miscift.com/assets/favicon-dark.png",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Mic Ian Aron",
+    "email": "miocianaron@gmail.com"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Miscift",
+  "url": "https://miscift.com"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mic Ian Aron",
+  "email": "miocianaron@gmail.com",
+  "jobTitle": "Founder",
+  "sameAs": [
+    "https://github.com/micianaron/miscift-public",
+    "https://x.com/misciftpublic"
+  ]
+}
+</script>
+<!-- end miscift trust block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Compliance Architecture | Miscift</title>
+    <meta name="description" content="Read the technical specifications of Miscift's zero-knowledge, client-side WebAssembly architecture. 100% GDPR and HIPAA compliant by default.">
+    <link rel="icon" href="assets/favicon-dark.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="assets/favicon-light.png" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+</head>
+<body>
+    <div class="hero" style="padding: 60px 20px; text-align: center; background: var(--color-surface); border-bottom: 1px solid var(--color-border);">
+        <h1 style="font-size: 40px; font-weight: 800; margin-bottom: 16px;">Security & Compliance</h1>
+        <p style="color: var(--color-text-muted); font-size: 18px; max-width: 600px; margin: 0 auto;">Technical documentation on our zero-knowledge file processing architecture.</p>
+    </div>
+
+    <main class="container" style="max-width: 800px; margin: 40px auto; padding: 0 20px;">
+        <div class="content-section" style="padding: 40px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: var(--shadow-sm);">
+            
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 20px;">1. Client-Side Processing Architecture</h2>
+            <p style="color: var(--color-text); line-height: 1.8; margin-bottom: 20px;">
+                Traditional file converters require users to upload payloads to a remote server. This creates inherent vulnerabilities, including Man-in-the-Middle (MitM) interception, server-side data breaches, and reliance on automated file-deletion chron jobs. 
+            </p>
+            <p style="color: var(--color-text); line-height: 1.8; margin-bottom: 30px;">
+                Miscift mitigates these attack vectors entirely by utilizing <strong>WebAssembly (Wasm)</strong>. When a user selects a file for conversion, the processing engine (such as FFmpeg for media, or PDF.js for documents) is loaded directly into the client's browser. The file is mapped into local RAM and converted on the user's local CPU. At no point is the file payload transmitted over any network.
+            </p>
+
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 20px; border-top: 1px solid var(--color-border); padding-top: 30px;">2. Regulatory Compliance (GDPR, CCPA, HIPAA)</h2>
+            <p style="color: var(--color-text); line-height: 1.8; margin-bottom: 20px;">
+                Because Miscift operates on a <strong>Zero-Knowledge</strong> model, we inherently bypass the data-handling restrictions of major global privacy frameworks. 
+            </p>
+            <ul style="padding-left: 20px; color: var(--color-text); line-height: 1.8; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><strong>GDPR & CCPA:</strong> We do not collect, process, or store personally identifiable information (PII) or user files. There is no requirement for Data Processing Agreements (DPAs) for file conversion because we are not acting as a data processor.</li>
+                <li style="margin-bottom: 10px;"><strong>HIPAA Compliance:</strong> Medical professionals and organizations can safely use Miscift to convert documents containing Protected Health Information (PHI). Because the payload remains on the workstation behind the organization's firewall, it does not constitute a third-party data transmission.</li>
+            </ul>
+
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 20px; border-top: 1px solid var(--color-border); padding-top: 30px;">3. Open Source Library Integrations</h2>
+            <p style="color: var(--color-text); line-height: 1.8; margin-bottom: 20px;">
+                To guarantee the highest quality encoding without sacrificing security, Miscift relies on peer-reviewed, industry-standard open-source libraries compiled for the web.
+            </p>
+            <ul style="padding-left: 20px; color: var(--color-text); line-height: 1.8; margin-bottom: 30px;">
+                <li style="margin-bottom: 10px;"><strong>FFmpeg (via Wasm):</strong> Handles all complex audio and video transcodings (MP4, AVI, WAV, FLAC).</li>
+                <li style="margin-bottom: 10px;"><strong>PDF.js:</strong> Handles secure client-side document rendering and extraction.</li>
+                <li style="margin-bottom: 10px;"><strong>JSZip:</strong> Provides zero-upload archive creation and extraction for sensitive batch files.</li>
+            </ul>
+
+            <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 20px; border-top: 1px solid var(--color-border); padding-top: 30px;">4. Browser Sandbox Security</h2>
+            <p style="color: var(--color-text); line-height: 1.8; margin-bottom: 20px;">
+                All execution occurs within the standard web browser sandbox. This prevents our scripts from accessing the user's broader file system, interacting with unauthorized memory sectors, or executing malicious binaries. The only files we have access to are the ones explicitly dropped into the conversion zone by the user, and that access is revoked immediately upon page reload.
+            </p>
+        </div>
+        
+        <div style="text-align: center; padding: 16px 0; margin-top: 20px; border-top: 1px solid var(--color-border);">
+            <p style="font-size: 13px; color: var(--color-text-muted); margin: 0;">
+                Led by <a href="about.html" style="color: var(--color-primary); text-decoration: none; font-weight: 600;">Mic Ian Aron</a> &amp; 40+ Technical Contributors &middot; 
+                <a href="manifesto.html" style="color: var(--color-text-muted); text-decoration: none;">Read our Manifesto</a>
+            </p>
+        </div>
+    </main>
+
+    <script src="js/navigation.js?v=4"></script>
+</body>
+</html>
+
+
+
+
