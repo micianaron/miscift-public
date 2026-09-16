@@ -1,0 +1,13 @@
+FAIR USE & RECOGNITION STATEMENT
+
+Miscift is an open-source, client-side file conversion utility.
+The source code provided in this repository is distributed for educational, auditing, and transparency purposes. 
+
+1. OPEN SOURCE TRANSPARENCY
+This code is published publicly to allow independent verification of our privacy claims. By reading these files, users and security researchers can verify that Miscift processes all files locally via WebAssembly and does not transmit, collect, or store Personally Identifiable Information (PII).
+
+2. ATTRIBUTION & RECOGNITION
+We recognize and deeply appreciate the open-source community, particularly the maintainers of FFmpeg, PDF.js, and the WebAssembly toolchains that make decentralized client-side processing possible. 
+
+3. FAIR USE
+The algorithms, styles, and structural architectures contained herein are available for public review. If you intend to fork or utilize significant portions of this proprietary layout for commercial purposes, please attribute the original authors as per standard open-source etiquette.

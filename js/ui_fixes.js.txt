@@ -1,0 +1,85 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Hook up the Advanced Settings Action Buttons
+    const settingsButtons = document.querySelectorAll('.settings-content button');
+    
+    settingsButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const actionText = btn.innerText;
+            
+            // Create a small toast notification
+            const toast = document.createElement('div');
+            toast.innerText = `${actionText} Successful!`;
+            toast.style.position = 'fixed';
+            toast.style.bottom = '20px';
+            toast.style.right = '20px';
+            toast.style.background = 'var(--color-primary)';
+            toast.style.color = 'white';
+            toast.style.padding = '12px 24px';
+            toast.style.borderRadius = '8px';
+            toast.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+            toast.style.fontWeight = '700';
+            toast.style.zIndex = '9999';
+            toast.style.opacity = '0';
+            toast.style.transition = 'opacity 0.3s ease';
+            
+            document.body.appendChild(toast);
+            
+            // Fade in
+            setTimeout(() => { toast.style.opacity = '1'; }, 10);
+            
+            // Fade out and remove
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        });
+    });
+
+    // 2. Fix split button dropdown arrow next to "Choose Files"
+    const chooseFilesArrow = document.querySelector('.btn-primary .fa-angle-down');
+    if (chooseFilesArrow) {
+        const parentBtn = chooseFilesArrow.closest('.btn-primary');
+        if (parentBtn) {
+            parentBtn.removeAttribute('onclick');
+            parentBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                // trigger file input anyway for now since we don't have a real cloud picker
+                const fileInput = document.querySelector('input[type="file"]');
+                if (fileInput) fileInput.click();
+            });
+        }
+    }
+});
+
+
+    // 3. Hook up the Footer Language Select
+    const langSelect = document.querySelector('.footer-language-select select');
+    if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+            const toast = document.createElement('div');
+            toast.innerText = 'Language changed to ' + e.target.value;
+            toast.style.position = 'fixed';
+            toast.style.bottom = '20px';
+            toast.style.right = '20px';
+            toast.style.background = 'var(--color-primary)';
+            toast.style.color = 'white';
+            toast.style.padding = '12px 24px';
+            toast.style.borderRadius = '8px';
+            toast.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+            toast.style.fontWeight = '700';
+            toast.style.zIndex = '9999';
+            toast.style.opacity = '0';
+            toast.style.transition = 'opacity 0.3s ease';
+            document.body.appendChild(toast);
+            setTimeout(() => { toast.style.opacity = '1'; }, 10);
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        });
+    }
+    

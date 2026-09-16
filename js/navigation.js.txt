@@ -1,0 +1,476 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // ===== BASE PATH DETECTION =====
+    // Works on any domain by extracting path prefix from the script src attribute
+    let basePath = "";
+    const scripts = document.getElementsByTagName('script');
+    for (let i = 0; i < scripts.length; i++) {
+        const src = scripts[i].getAttribute('src') || '';
+        const idx = src.indexOf('js/navigation.js');
+        if (idx !== -1) {
+            basePath = src.substring(0, idx);
+            break;
+        }
+    }
+
+    // ===== INJECT FONT AWESOME CDN =====
+    if (!document.querySelector('link[href*="font-awesome"]')) {
+        const faLink = document.createElement('link');
+        faLink.rel = 'stylesheet';
+        faLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css';
+        faLink.crossOrigin = 'anonymous';
+        faLink.referrerPolicy = 'no-referrer';
+        document.head.appendChild(faLink);
+    }
+
+    // ===== INJECT FAVICON =====
+    if (!document.querySelector('link[rel*="icon"]')) {
+        const fav = document.createElement('link');
+        fav.rel = 'icon';
+        fav.type = 'image/svg+xml';
+        fav.href = basePath + 'favicon.svg';
+        document.head.appendChild(fav);
+    }
+
+    // ===== SEO META TAG INJECTION =====
+    const SITE_URL = 'https://miscift.com';
+    const pageTitle = document.title || 'Miscift';
+    const cleanTitle = pageTitle.replace(/\s*-\s*Miscift$/i, '').replace(/^Miscift\s*-\s*/i, '').trim();
+    const pagePath = window.location.pathname;
+    
+
+    // Auto-generate meta description based on page type
+    function generateDescription() {
+        const p = pagePath.toLowerCase();
+
+        // Homepage
+        if (p.endsWith('index.html') || p === '/' || p.match(/\/$/)) {
+            return 'Free online file converter \u2014 convert images, videos, audio, documents and archives in your browser. No upload, no registration, 100% private and secure.';
+        }
+
+        // Converter tool pages (X to Y)
+        const convMatch = cleanTitle.match(/^(.+?)\s+to\s+(.+?)$/i);
+        if (convMatch) {
+            const f = convMatch[1].toUpperCase().trim();
+            const t = convMatch[2].toUpperCase().trim();
+            return 'Convert ' + f + ' to ' + t + ' online for free. Fast, secure, browser-based converter. No upload needed \u2014 files never leave your device.';
+        }
+
+        // Compress tool pages
+        if (/compress/i.test(cleanTitle)) {
+            const fmt = cleanTitle.replace(/compress\s*/i, '').replace(/\s*converter/i, '').trim().toUpperCase();
+            return 'Compress ' + fmt + ' files online for free. Reduce file size without quality loss. 100% browser-based \u2014 files stay private.';
+        }
+
+        // Hub / category pages
+        if (/hub/i.test(cleanTitle)) {
+            return cleanTitle + ' \u2014 browse free online converter tools. Process files instantly in your browser with complete privacy.';
+        }
+
+        // All Tools
+        if (/all tools|tools/i.test(cleanTitle)) {
+            return 'Browse 200+ free online converter tools. Convert images, video, audio, documents and archives instantly in your browser.';
+        }
+
+        // Standard pages
+        if (/about/i.test(cleanTitle)) return 'About Miscift \u2014 the free, privacy-first file converter that processes files entirely in your browser using WebAssembly.';
+        if (/privacy/i.test(cleanTitle)) return 'Miscift Privacy Policy. Files are processed locally in your browser and never uploaded. GDPR and CCPA compliant.';
+        if (/terms/i.test(cleanTitle)) return 'Miscift Terms of Service. Free online file conversion with no registration required.';
+        if (/contact/i.test(cleanTitle)) return 'Contact the Miscift team for support, bug reports, feature requests, or partnership inquiries.';
+        if (/documentation|docs/i.test(cleanTitle)) return 'Miscift documentation. Learn how to use advanced conversion settings and browser-based file processing.';
+        if (/security|compliance/i.test(cleanTitle)) return 'Miscift security and compliance. Client-side WebAssembly processing ensures GDPR compliance with zero data collection.';
+        if (/status/i.test(cleanTitle)) return 'Miscift system status. Check current service availability, uptime, and performance metrics.';
+        if (/support|donate/i.test(cleanTitle)) return 'Support Miscift \u2014 help keep the free, privacy-first file converter available for everyone worldwide.';
+
+        return cleanTitle + ' \u2014 Miscift free online file converter.';
+    }
+
+    const metaDesc = generateDescription();
+
+    // Inject meta description
+    if (!document.querySelector('meta[name="description"]')) {
+        const m = document.createElement('meta');
+        m.name = 'description';
+        m.content = metaDesc;
+        document.head.appendChild(m);
+    }
+
+    // Inject canonical URL
+    if (!document.querySelector('link[rel="canonical"]')) {
+        const link = document.createElement('link');
+        link.rel = 'canonical';
+        let cp = pagePath;
+        // Strip local dev path prefix if present
+        var rootIdx = cp.indexOf('/miscift/');
+        if (rootIdx !== -1) {
+            cp = cp.substring(rootIdx + '/miscift'.length);
+        }
+        link.href = SITE_URL + cp;
+        document.head.appendChild(link);
+    }
+
+    // Inject Open Graph tags
+    var ogTags = [
+        ['og:type', 'website'],
+        ['og:site_name', 'Miscift'],
+        ['og:title', pageTitle],
+        ['og:description', metaDesc],
+        ['og:url', window.location.href],
+        ['og:image', SITE_URL + '/assets/favicon-dark.png']
+    ];
+    ogTags.forEach(function(tag) {
+        if (!document.querySelector('meta[property="' + tag[0] + '"]')) {
+            var m = document.createElement('meta');
+            m.setAttribute('property', tag[0]);
+            m.content = tag[1];
+            document.head.appendChild(m);
+        }
+    });
+
+    // Inject Twitter Card tags
+    var twitterTags = [
+        ['twitter:card', 'summary'],
+        ['twitter:title', pageTitle],
+        ['twitter:description', metaDesc],
+        ['twitter:image', SITE_URL + '/assets/favicon-dark.png']
+    ];
+    twitterTags.forEach(function(tag) {
+        if (!document.querySelector('meta[name="' + tag[0] + '"]')) {
+            var m = document.createElement('meta');
+            m.name = tag[0];
+            m.content = tag[1];
+            document.head.appendChild(m);
+        }
+    });
+
+    // Inject JSON-LD Structured Data
+    var isToolPage = pagePath.includes('/pages/') || /Hub|Convert|Compress/i.test(pagePath);
+    var structuredData = isToolPage ? {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": cleanTitle + ' | Miscift',
+        "url": window.location.href,
+        "description": metaDesc,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Miscift",
+            "url": SITE_URL
+        }
+    } : {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Miscift",
+        "url": SITE_URL,
+        "description": "Free online file converter. Convert images, videos, audio, documents and archives privately in your browser."
+    };
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(ldScript);
+
+    // ===== BREADCRUMB GENERATION =====
+    var breadcrumbHtml = '';
+    var breadcrumbLd = null;
+    if (pagePath.includes('/pages/')) {
+        // Parse category from path: /pages/image/png-to-jpg.html â†’ image
+        var pathSegments = pagePath.split('/');
+        var pagesIdx = pathSegments.indexOf('pages');
+        var category = (pagesIdx !== -1 && pathSegments[pagesIdx + 1]) ? pathSegments[pagesIdx + 1] : '';
+
+        // Map folder names to hub page names and display names
+        var categoryMap = {
+            'image': { hub: 'imageConvertHub.html', name: 'Image Converter' },
+            'image-compress': { hub: 'imageCompressHub.html', name: 'Image Compressor' },
+            'video': { hub: 'videoConvertHub.html', name: 'Video Converter' },
+            'video-compress': { hub: 'videoCompressHub.html', name: 'Video Compressor' },
+            'audio': { hub: 'AudioConverterHub.html', name: 'Audio Converter' },
+            'audio-compress': { hub: 'AudioCompressHub.html', name: 'Audio Compressor' },
+            'document': { hub: 'DocumentConverterHub.html', name: 'Document Converter' },
+            'word': { hub: 'WordProcessHub.html', name: 'Word Converter' },
+            'zip': { hub: 'ZipConvertHub.html', name: 'Archive Converter' },
+            'unit': { hub: 'UnitConverterHub.html', name: 'Unit Converter' }
+        };
+
+        var catInfo = categoryMap[category];
+        if (catInfo) {
+            breadcrumbHtml = '<nav class="breadcrumb-nav" aria-label="Breadcrumb">' +
+                '<a href="' + basePath + 'index.html">Home</a>' +
+                ' <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span> ' +
+                '<a href="' + basePath + catInfo.hub + '">' + catInfo.name + '</a>' +
+                ' <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span> ' +
+                '<span class="breadcrumb-current">' + cleanTitle + '</span>' +
+                '</nav>';
+
+            // BreadcrumbList JSON-LD for SEO
+            breadcrumbLd = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/" },
+                    { "@type": "ListItem", "position": 2, "name": catInfo.name, "item": SITE_URL + "/" + catInfo.hub },
+                    { "@type": "ListItem", "position": 3, "name": cleanTitle, "item": window.location.href }
+                ]
+            };
+            var bcLdScript = document.createElement('script');
+            bcLdScript.type = 'application/ld+json';
+            bcLdScript.textContent = JSON.stringify(breadcrumbLd);
+            document.head.appendChild(bcLdScript);
+        }
+    }
+
+    // Inject JSON-LD Structured Data
+    var isToolPage = pagePath.includes('/pages/') || /Hub|Convert|Compress/i.test(pagePath);
+    var structuredData = isToolPage ? {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": cleanTitle + ' | Miscift',
+        "url": window.location.href,
+        "description": metaDesc,
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Miscift",
+            "url": SITE_URL
+        }
+    } : {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Miscift",
+        "url": SITE_URL,
+        "description": "Free online file converter. Convert images, videos, audio, documents and archives privately in your browser."
+    };
+    var ldScript = document.createElement('script');
+    ldScript.type = 'application/ld+json';
+    ldScript.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(ldScript);
+
+    // ===== BREADCRUMB GENERATION =====
+    var breadcrumbHtml = '';
+    var breadcrumbLd = null;
+    if (pagePath.includes('/pages/')) {
+        // Parse category from path: /pages/image/png-to-jpg.html â†’ image
+        var pathSegments = pagePath.split('/');
+        var pagesIdx = pathSegments.indexOf('pages');
+        var category = (pagesIdx !== -1 && pathSegments[pagesIdx + 1]) ? pathSegments[pagesIdx + 1] : '';
+
+        // Map folder names to hub page names and display names
+        var categoryMap = {
+            'image': { hub: 'imageConvertHub.html', name: 'Image Converter' },
+            'image-compress': { hub: 'imageCompressHub.html', name: 'Image Compressor' },
+            'video': { hub: 'videoConvertHub.html', name: 'Video Converter' },
+            'video-compress': { hub: 'videoCompressHub.html', name: 'Video Compressor' },
+            'audio': { hub: 'AudioConverterHub.html', name: 'Audio Converter' },
+            'audio-compress': { hub: 'AudioCompressHub.html', name: 'Audio Compressor' },
+            'document': { hub: 'DocumentConverterHub.html', name: 'Document Converter' },
+            'word': { hub: 'WordProcessHub.html', name: 'Word Converter' },
+            'zip': { hub: 'ZipConvertHub.html', name: 'Archive Converter' },
+            'unit': { hub: 'UnitConverterHub.html', name: 'Unit Converter' }
+        };
+
+        var catInfo = categoryMap[category];
+        if (catInfo) {
+            breadcrumbHtml = '<nav class="breadcrumb-nav" aria-label="Breadcrumb">' +
+                '<a href="' + basePath + 'index.html">Home</a>' +
+                ' <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span> ' +
+                '<a href="' + basePath + catInfo.hub + '">' + catInfo.name + '</a>' +
+                ' <span class="breadcrumb-sep"><i class="fa-solid fa-chevron-right"></i></span> ' +
+                '<span class="breadcrumb-current">' + cleanTitle + '</span>' +
+                '</nav>';
+
+            // BreadcrumbList JSON-LD for SEO
+            breadcrumbLd = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/" },
+                    { "@type": "ListItem", "position": 2, "name": catInfo.name, "item": SITE_URL + "/" + catInfo.hub },
+                    { "@type": "ListItem", "position": 3, "name": cleanTitle, "item": window.location.href }
+                ]
+            };
+            var bcLdScript = document.createElement('script');
+            bcLdScript.type = 'application/ld+json';
+            bcLdScript.textContent = JSON.stringify(breadcrumbLd);
+            document.head.appendChild(bcLdScript);
+        }
+    }
+
+    // ===== HEADER HTML =====
+    const headerHtml = `
+        <div style="background-color: var(--color-primary); color: white; text-align: center; padding: 12px; font-weight: bold; font-size: 14px;">
+            100% Free & Ad-Free Tools. Funded entirely by user donations. If these saved you time, consider <a href="https://donate.stripe.com/28E4gBezV4Ph01W2pBgw001" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline;">buying us a coffee</a>. <span style="font-size: 11px; opacity: 0.65; margin-left: 12px;"><a href="${basePath}donation-terms.html" style="color: white; text-decoration: none;">Terms</a> &nbsp;|&nbsp; <a href="${basePath}review-guidelines.html" style="color: white; text-decoration: none;">Review Guidelines</a></span>
+        </div>
+        <header>
+            <div class="header-inner">
+                <a href="${basePath}index.html" class="brand">
+                    <picture style="display: flex; align-items: center; justify-content: center;"><source srcset="${basePath}assets/favicon-light.png" media="(prefers-color-scheme: dark)"><img src="${basePath}assets/favicon-dark.png" alt="Miscift Logo" style="height: 36px; width: auto; object-fit: contain;"></picture> Miscift
+                </a>
+                                <button class="mobile-menu-btn" aria-label="Toggle navigation" style="display: none; background: none; border: none; font-size: 24px; color: var(--color-text); cursor: pointer;">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <nav class="nav-links">
+                    <div class="dropdown click-dropdown">
+                        <button class="dropbtn">Converters <i class="fa-solid fa-angle-down" style="font-size: 12px; margin-left: 4px;"></i></button>
+                        <div class="dropdown-content mega-menu wide-menu">
+                            <span class="close-menu"><i class="fa-solid fa-xmark"></i></span>
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Video & Audio</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}videoConvertHub.html">Video Converter</a></li>
+                                        <li><a href="${basePath}AudioConverterHub.html">Audio Converter</a></li>
+                                        <li><a href="${basePath}pages/video/avi-to-flv.html">AVI to FLV</a></li>
+                                        <li><a href="${basePath}pages/audio/aac-to-flac.html">AAC to FLAC</a></li>
+                                        <li><a href="${basePath}videoConvertHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Image</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}imageConvertHub.html">Image Converter</a></li>
+                                        <li><a href="${basePath}pages/image/bmp-to-svg.html">BMP to SVG</a></li>
+                                        <li><a href="${basePath}pages/image/gif-to-bmp.html">GIF to BMP</a></li>
+                                        <li><a href="${basePath}pages/image/jpeg-to-webp.html">JPEG to WEBP</a></li>
+                                        <li><a href="${basePath}imageConvertHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Document & Archive</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}DocumentConverterHub.html">Document Converter</a></li>
+                                        <li><a href="${basePath}WordProcessHub.html">Word Converter</a></li>
+                                        <li><a href="${basePath}ZipConvertHub.html">Archive (ZIP) Converter</a></li>
+                                        <li><a href="${basePath}pages/document/pdf-to-txt.html">PDF to TXT</a></li>
+                                        <li><a href="${basePath}DocumentConverterHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Others & Units</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}UnitConverterHub.html">Unit Converter</a></li>
+                                        <li><a href="${basePath}pages/unit/celsius-to-fahrenheit.html">Celsius to Fahrenheit</a></li>
+                                        <li><a href="${basePath}pages/unit/kilogram-to-pound.html">Kg to Lbs</a></li>
+                                        <li><a href="${basePath}pages/unit/mile-to-kilometer.html">Miles to Km</a></li>
+                                        <li><a href="${basePath}UnitConverterHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown click-dropdown">
+                        <button class="dropbtn">Compress <i class="fa-solid fa-angle-down" style="font-size: 12px; margin-left: 4px;"></i></button>
+                        <div class="dropdown-content mega-menu wide-menu">
+                            <span class="close-menu"><i class="fa-solid fa-xmark"></i></span>
+                            <div class="mega-menu-grid" style="grid-template-columns: repeat(3, 1fr);">
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Image Compress</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}imageCompressHub.html">Compress Image</a></li>
+                                        <li><a href="${basePath}pages/image-compress/compress-png.html">Compress PNG</a></li>
+                                        <li><a href="${basePath}pages/image-compress/compress-jpg.html">Compress JPG</a></li>
+                                        <li><a href="${basePath}imageCompressHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Video Compress</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}videoCompressHub.html">Compress Video</a></li>
+                                        <li><a href="${basePath}pages/video-compress/compress-mp4.html">Compress MP4</a></li>
+                                        <li><a href="${basePath}pages/video-compress/compress-avi.html">Compress AVI</a></li>
+                                        <li><a href="${basePath}videoCompressHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <span class="section-title">Audio Compress</span>
+                                    <ul class="mega-menu-tools">
+                                        <li><a href="${basePath}AudioCompressHub.html">Compress Audio</a></li>
+                                        <li><a href="${basePath}pages/audio-compress/compress-mp3.html">Compress MP3</a></li>
+                                        <li><a href="${basePath}pages/audio-compress/compress-wav.html">Compress WAV</a></li>
+                                        <li><a href="${basePath}AudioCompressHub.html" class="view-all-link">View all &rarr;</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="${basePath}tools.html" class="nav-item">Tools</a>
+                    <a href="${basePath}docs.html" class="nav-item">Docs</a>
+                </nav>
+            </div>
+        </header>
+    `;
+
+    // ===== FOOTER HTML =====
+    const footerLinksHtml = `\n        <div class="footer-container">\n            <div class="footer-column brand-column">\n                <a href="${basePath}index.html" class="footer-brand">\n                    <picture style="display: flex; align-items: center; justify-content: center;"><source srcset="${basePath}assets/favicon-light.png" media="(prefers-color-scheme: dark)"><img src="${basePath}assets/favicon-dark.png" alt="Miscift Logo" style="height: 36px; width: auto; object-fit: contain;"></picture> Miscift\n                </a>\n                <p>File Converter - Convert 200+ different audio, image, video, e-book, document, and archive conversions online. No software to install and free.</p>\n                <div class="social-icons" style="margin-top: 16px; display: flex; gap: 16px;">\n                    <a href="https://github.com/micianaron/miscift-public" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); text-decoration: none;"><i class="fa-brands fa-github"></i> GitHub</a>\n                    <a href="https://x.com/misciftpublic" target="_blank" rel="noopener noreferrer" style="color: var(--color-text); text-decoration: none;"><i class="fa-brands fa-x-twitter"></i> Twitter</a>\n                </div>\n            </div>\n            <div class="footer-column">\n                <h4>Converters</h4>\n                <a href="${basePath}videoConvertHub.html">Video Converter</a>\n                <a href="${basePath}AudioConverterHub.html">Audio Converter</a>\n                <a href="${basePath}imageConvertHub.html">Image Converter</a>\n                <a href="${basePath}DocumentConverterHub.html">Document Converter</a>\n                <a href="${basePath}ZipConvertHub.html">Archive Converter</a>\n            </div>\n            <div class="footer-column">\n                <h4>Tools</h4>\n                <a href="${basePath}WordProcessHub.html">Word Processor</a>\n                <a href="${basePath}UnitConverterHub.html">Unit Converter</a>\n                <a href="${basePath}imageCompressHub.html">Image Compressor</a>\n                <a href="${basePath}videoCompressHub.html">Video Compressor</a>\n                <a href="${basePath}tools.html">All Tools</a>\n            </div>\n            <div class="footer-column">\n                <h4>Company</h4>\n                <a href="${basePath}about.html">About Us</a>\n                <a href="${basePath}docs.html">Docs</a>\n                <a href="${basePath}privacy.html">Privacy Policy</a>\n                <a href="${basePath}terms.html">Terms of Service</a>\n                <a href="${basePath}license.html">License</a>\n                <a href="${basePath}contact.html">Contact Us</a>\n            </div>\n        </div>\n        <div class="footer-bottom">\n            <div class="footer-bottom-inner">\n                <div class="footer-span-links">\n                    <a href="${basePath}about.html">About Us</a>\n                    <a href="https://donate.stripe.com/28E4gBezV4Ph01W2pBgw001" target="_blank" rel="noopener noreferrer">Donate</a>\n                    <a href="${basePath}privacy.html">Privacy</a>\n                    <a href="${basePath}terms.html">Terms</a>\n                    <a href="${basePath}legal.html">Security and Compliance</a>\n                    <a href="${basePath}license.html">License</a>\n                    <a href="${basePath}contact.html">Contact</a>\n                    <a href="${basePath}status.html">Status</a>\n                </div>\n                <div class="footer-language-select">\n                    <i class="fa-solid fa-globe"></i>\n                    <select>\n                        <option>English</option>\n                        <option>Espa\u00f1ol</option>\n                        <option>Fran\u00e7ais</option>\n                        <option></option>\n                    </select>\n                </div>\n            </div>\n            <p style="margin-top: 16px; color: var(--color-text-muted);">&copy; 2026 Miscift. All rights reserved.</p>\n        </div>\n    `;
+
+    // ===== INJECT HEADER =====
+    const body = document.querySelector('body');
+    if (body && !document.querySelector('header')) {
+        body.insertAdjacentHTML('afterbegin', headerHtml);
+    } else if (document.querySelector('header')) {
+        document.querySelector('header').outerHTML = headerHtml;
+    }
+
+    // ===== INJECT BREADCRUMBS (after header, on tool pages only) =====
+    if (breadcrumbHtml) {
+        var headerEl = document.querySelector('header');
+        if (headerEl && !document.querySelector('.breadcrumb-nav')) {
+            headerEl.insertAdjacentHTML('afterend', breadcrumbHtml);
+        }
+    }
+
+    // ===== INJECT FOOTER (create <footer> if missing) =====
+    let footer = document.querySelector('footer');
+    if (!footer) {
+        footer = document.createElement('footer');
+        document.body.appendChild(footer);
+    }
+    footer.innerHTML = footerLinksHtml;
+
+    
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+    }
+
+    const dropBtns = document.querySelectorAll('.dropbtn');
+    dropBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const content = btn.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                document.querySelectorAll('.dropdown-content').forEach(c => c.style.display = 'none');
+                content.style.display = 'block';
+            }
+        });
+    });
+
+    const closeMenus = document.querySelectorAll('.close-menu');
+    closeMenus.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.closest('.dropdown-content').style.display = 'none';
+        });
+    });
+});
+
+
+
+
+

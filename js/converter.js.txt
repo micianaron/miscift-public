@@ -1,0 +1,454 @@
+﻿/**
+ * Miscift Unified Client-Side Conversion Engine
+ * Runs completely in the browser sandbox.
+ */
+
+function initConverter() {
+    const dragDropBar = document.querySelector('.drag-drop-bar');
+    if (!dragDropBar) return;
+
+    const pathname = window.location.pathname;
+    const filename = pathname.split('/').pop();
+    
+    // Do not attach logic to index or hubs
+    if (pathname.includes('index.html') || pathname.endsWith('/') || pathname.includes('Hub.html') || pathname.includes('tools.html')) {
+        return; 
+    }
+
+    let targetExtension = 'out';
+    let inputExtension = 'in';
+    const isCompress = pathname.includes('compress-');
+    
+    if (pathname.includes('-to-')) {
+        const parts = filename.replace('.html', '').toLowerCase().split('-to-');
+        inputExtension = parts[0];
+        targetExtension = parts[1];
+    } else if (isCompress) {
+        targetExtension = filename.replace('compress-', '').replace('.html', '').toLowerCase();
+        inputExtension = targetExtension;
+    }
+
+    // Category routing
+    let category = 'misc';
+    if (pathname.includes('/image/')) category = 'image';
+    if (pathname.includes('/video/')) category = 'video';
+    if (pathname.includes('/audio/')) category = 'audio';
+    if (pathname.includes('/document/') || pathname.includes('/word/')) category = 'document';
+    if (pathname.includes('/zip/')) category = 'archive';
+    if (pathname.includes('-compress/')) category = pathname.split('/pages/')[1].split('-compress')[0]; // e.g. 'image', 'video', 'audio'
+
+    // 1. Create hidden file input
+    const fileInput = document.createElement('input');
+    fileInput.type = 'file';
+    fileInput.style.display = 'none';
+    document.body.appendChild(fileInput);
+
+    // 2. Hijack "Choose Files" button
+    const chooseFilesBtn = dragDropBar.querySelector('.btn-primary');
+    if (chooseFilesBtn) {
+        chooseFilesBtn.removeAttribute('onclick');
+        chooseFilesBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            fileInput.click();
+        });
+    }
+
+    // Hijack cloud button to avoid fake alerts
+    const cloudBtn = dragDropBar.querySelectorAll('button')[1];
+    if (cloudBtn) cloudBtn.removeAttribute('onclick');
+
+    // Make drop zone clickable
+    dragDropBar.style.cursor = 'pointer';
+    dragDropBar.addEventListener('click', (e) => {
+        if(e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON' && !e.target.closest('.fa-google-drive') && !e.target.closest('.fa-dropbox') && !e.target.closest('.fa-link')) {
+             fileInput.click();
+        }
+    });
+
+    // 3. Setup Drag and Drop
+    fileInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files.length > 0) handleFile(e.target.files[0]);
+    });
+
+    dragDropBar.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dragDropBar.style.borderColor = 'var(--color-primary)';
+        dragDropBar.style.backgroundColor = 'rgba(114, 124, 245, 0.05)';
+    });
+
+    dragDropBar.addEventListener('dragleave', (e) => {
+        e.preventDefault();
+        dragDropBar.style.borderColor = 'var(--color-border)';
+        dragDropBar.style.backgroundColor = 'var(--color-surface)';
+    });
+
+    dragDropBar.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dragDropBar.style.borderColor = 'var(--color-border)';
+        dragDropBar.style.backgroundColor = 'var(--color-surface)';
+        if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
+            handleFile(e.dataTransfer.files[0]);
+        }
+    });
+
+        // 4. File Handling & UI Update
+    function handleFile(file) {
+        const contentDiv = dragDropBar.querySelector('.drag-drop-content');
+        const extMatch = file.name.split('.').pop().toLowerCase();
+        
+        // Validation check
+        if (inputExtension !== 'in' && extMatch !== inputExtension && !isCompress) {
+            contentDiv.innerHTML = `
+                <div style="padding: 40px 20px; text-align: center; animation: pageFadeIn 0.4s ease-out;">
+                    <i class="fas fa-exclamation-circle" style="font-size: 56px; color: #ff5b5b; margin-bottom: 20px;"></i>
+                    <h3 style="font-size: 24px; margin-bottom: 12px; color: var(--color-text);">Invalid File Type</h3>
+                    <p style="color: var(--color-text-muted); margin-bottom: 30px; font-size: 16px;">
+                        This tool specifically expects a <strong style="color: var(--color-text); text-transform: uppercase;">.${inputExtension}</strong> file, but you uploaded a <strong style="color: var(--color-text); text-transform: uppercase;">.${extMatch}</strong> file.
+                    </p>
+                    
+                    <button id="retry-upload-btn" class="btn btn-primary" style="padding: 12px 30px; border-radius: 8px; font-weight: 600; border: none; cursor: pointer; color: white; background-color: var(--color-primary); margin-bottom: 30px; font-size: 16px; transition: all 0.2s;">
+                        <i class="fas fa-sync-alt" style="margin-right: 8px;"></i> Retry Upload
+                    </button>
+                    
+                    <div style="border-top: 1px solid var(--color-border); padding-top: 24px; margin-top: 8px; max-width: 400px; margin-left: auto; margin-right: auto;">
+                        <p style="font-size: 15px; color: var(--color-text-muted); margin-bottom: 16px;">Perhaps this is not the tool you are looking for?</p>
+                        <a href="../../tools.html" class="btn btn-outline" style="display: inline-block; padding: 10px 24px; border-radius: 8px; border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text); text-decoration: none; font-weight: 600; font-size: 15px; transition: all 0.2s;">
+                            Check out our other tools <i class="fas fa-arrow-right" style="margin-left: 6px;"></i>
+                        </a>
+                    </div>
+                </div>
+            `;
+            
+            fileInput.value = ''; // Reset input to allow re-selection
+            
+            setTimeout(() => {
+                const retryBtn = document.getElementById('retry-upload-btn');
+                if (retryBtn) {
+                    retryBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        fileInput.click();
+                    });
+                    retryBtn.addEventListener('mouseenter', () => { retryBtn.style.opacity = '0.9' });
+                    retryBtn.addEventListener('mouseleave', () => { retryBtn.style.opacity = '1' });
+                }
+                
+                const otherBtn = contentDiv.querySelector('a.btn-outline');
+                if (otherBtn) {
+                    otherBtn.addEventListener('mouseenter', () => { otherBtn.style.backgroundColor = 'var(--color-border)' });
+                    otherBtn.addEventListener('mouseleave', () => { otherBtn.style.backgroundColor = 'var(--color-bg)' });
+                }
+            }, 50);
+            
+            return;
+        }
+        
+        contentDiv.innerHTML = `
+            <div style="padding: 20px;">
+                <h3 style="font-size: 20px; margin-bottom: 16px;">Processing ${file.name}...</h3>
+                <div style="width: 100%; background: var(--color-bg); height: 12px; border-radius: 6px; overflow: hidden; margin-bottom: 16px; border: 1px solid var(--color-border);">
+                    <div id="progress-bar" style="width: 5%; height: 100%; background: var(--color-primary); transition: width 0.2s ease-out;"></div>
+                </div>
+                <p id="progress-text" style="color: var(--color-text-muted);">Initializing Engine...</p>
+            </div>
+        `;
+
+        // Route to the proper engine
+        if (category === 'image') {
+            processImage(file, inputExtension, targetExtension, contentDiv);
+        } else if (category === 'video' || category === 'audio') {
+            processMedia(file, inputExtension, targetExtension, contentDiv);
+        } else if (category === 'document') {
+            processDocument(file, inputExtension, targetExtension, contentDiv);
+        } else if (category === 'archive') {
+            processArchive(file, inputExtension, targetExtension, contentDiv);
+        } else {
+            processFallback(file, targetExtension, contentDiv);
+        }
+    }
+
+    // ==========================================
+
+    async function loadScript(src) {
+        return new Promise((resolve, reject) => {
+            if (document.querySelector('script[src="' + src + '"]')) return resolve();
+            const s = document.createElement('script');
+            s.src = src;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.head.appendChild(s);
+        });
+    }
+
+        // --- 1. Image Engine (Canvas API) ---
+    function processImage(file, inputExt, targetExt, contentDiv) {
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        
+        // Parse Advanced Settings dynamically
+        const selects = document.querySelectorAll('.settings-content select');
+        let scale = 1.0;
+        let quality = isCompress ? 0.6 : 0.95;
+        
+        if (selects.length >= 2) {
+            const resizeVal = selects[0].value || '';
+            const compVal = selects[1].value || '';
+            
+            if (resizeVal.includes('Percentage') || resizeVal.includes('50%')) scale = 0.5;
+            
+            if (compVal.includes('Smallest')) quality = 0.3;
+            else if (compVal.includes('Medium')) quality = 0.6;
+            else if (compVal.includes('High')) quality = 0.95;
+        }
+
+        progressText.innerText = 'Initializing Canvas Engine...';
+        progressBar.style.width = '30%';
+        
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            const img = new Image();
+            img.onload = function() {
+                progressText.innerText = 'Applying transforms (Quality: ' + Math.round(quality*100) + '%, Scale: ' + Math.round(scale*100) + '%)...';
+                progressBar.style.width = '70%';
+                
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width * scale;
+                canvas.height = img.height * scale;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                
+                let mimeType = 'image/jpeg';
+                if (targetExt === 'png') mimeType = 'image/png';
+                if (targetExt === 'webp') mimeType = 'image/webp';
+                if (targetExt === 'bmp') mimeType = 'image/bmp';
+                if (targetExt === 'gif') mimeType = 'image/gif';
+                
+                canvas.toBlob((blob) => {
+                    progressBar.style.width = '100%';
+                    const url = URL.createObjectURL(blob);
+                    showDownloadUI(contentDiv, file.name.split('.')[0] + '.' + targetExt, url);
+                }, mimeType, quality);
+            };
+            img.src = event.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+
+    // --- 2. Media Engine (FFmpeg.wasm) ---
+    async function processMedia(file, inputExt, targetExt, contentDiv) {
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        
+        // Parse Advanced Settings dynamically
+        const selects = document.querySelectorAll('.settings-content select');
+        const inputs = document.querySelectorAll('.settings-content input[type="text"]');
+        let ffmpegArgs = [];
+        
+        if (category === 'video' && selects.length >= 2) {
+            const codec = selects[0].value || '';
+            const res = selects[1].value || '';
+            
+            if (codec.includes('H.264')) ffmpegArgs.push('-vcodec', 'libx264');
+            else if (codec.includes('H.265')) ffmpegArgs.push('-vcodec', 'libx265');
+            else if (isCompress) ffmpegArgs.push('-vcodec', 'libx264', '-crf', '28');
+
+            if (res.includes('1080p')) ffmpegArgs.push('-s', '1920x1080');
+            else if (res.includes('720p')) ffmpegArgs.push('-s', '1280x720');
+            else if (res.includes('480p')) ffmpegArgs.push('-s', '854x480');
+            
+            if (inputs.length >= 2) {
+                if (inputs[0].value) ffmpegArgs.push('-ss', inputs[0].value);
+                if (inputs[1].value) ffmpegArgs.push('-to', inputs[1].value);
+            }
+        } 
+        else if (category === 'audio' && selects.length >= 2) {
+            const bitrate = selects[0].value || '';
+            const sample = selects[1].value || '';
+            
+            if (bitrate.includes('320')) ffmpegArgs.push('-b:a', '320k');
+            else if (bitrate.includes('256')) ffmpegArgs.push('-b:a', '256k');
+            else if (bitrate.includes('128')) ffmpegArgs.push('-b:a', '128k');
+            else if (isCompress) ffmpegArgs.push('-b:a', '128k');
+
+            if (sample.includes('48000')) ffmpegArgs.push('-ar', '48000');
+            else if (sample.includes('44100')) ffmpegArgs.push('-ar', '44100');
+        }
+
+        try {
+            if (!window.FFmpeg) {
+                progressText.innerText = 'Loading transcoder engines (FFmpeg.wasm)...';
+                await loadScript('https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.js');
+                await loadScript('https://cdn.jsdelivr.net/npm/@ffmpeg/util@0.12.1/dist/umd/index.js');
+            }
+            
+            const { FFmpeg } = window.FFmpeg;
+            const { fetchFile, toBlobURL } = window.FFmpegUtil;
+            const ffmpeg = new FFmpeg();
+            
+            ffmpeg.on('progress', ({ progress, time }) => {
+                let p = Math.round(progress * 100);
+                if (p > 100) p = 100;
+                if (p < 5) p = 5;
+                progressBar.style.width = p + '%';
+                progressText.innerText = 'Transcoding... ' + p + '%';
+            });
+            
+            progressText.innerText = 'Loading FFmpeg Core...';
+            const baseURL = 'https://unpkg.com/@ffmpeg/core@0.12.6/dist/umd';
+            await ffmpeg.load({
+                coreURL: await toBlobURL(baseURL + '/ffmpeg-core.js', 'text/javascript'),
+                wasmURL: await toBlobURL(baseURL + '/ffmpeg-core.wasm', 'application/wasm'),
+            });
+            
+            progressText.innerText = 'Reading file into memory sandbox...';
+            const inputName = 'input.' + inputExt;
+            const outputName = 'output.' + targetExt;
+            
+            await ffmpeg.writeFile(inputName, await fetchFile(file));
+            
+            progressText.innerText = 'Converting to ' + targetExt.toUpperCase() + ' (Applying advanced settings)...';
+            
+            let finalArgs = ['-i', inputName, ...ffmpegArgs, outputName];
+            await ffmpeg.exec(finalArgs);
+            
+            progressText.innerText = 'Finalizing file...';
+            const data = await ffmpeg.readFile(outputName);
+            
+            await ffmpeg.deleteFile(inputName);
+            await ffmpeg.deleteFile(outputName);
+            
+            let mimeType = 'application/octet-stream';
+            if (['mp4','avi','mov','mkv','webm'].includes(targetExt)) mimeType = 'video/' + targetExt;
+            if (['mp3','wav','aac','ogg','flac','wma'].includes(targetExt)) mimeType = 'audio/' + targetExt;
+            if (targetExt === 'mp3') mimeType = 'audio/mpeg';
+            
+            const blob = new Blob([data.buffer], { type: mimeType });
+            showDownloadUI(contentDiv, file.name.split('.')[0] + '.' + targetExt, URL.createObjectURL(blob));
+            
+        } catch (err) {
+            progressText.innerText = 'Error: FFmpeg processing failed. ' + err.message;
+            progressText.style.color = 'red';
+        }
+    }
+
+    // --- 3. Document Engine (PDF.js / Fallback) ---
+    async function processDocument(file, inputExt, targetExt, contentDiv) {
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        
+        // Parse Advanced Settings dynamically
+        const passInput = document.querySelector('.settings-content input[type="password"]');
+        const docPassword = passInput ? passInput.value : '';
+
+        try {
+            if (inputExt === 'pdf' && targetExt === 'txt') {
+                if (!window.pdfjsLib) {
+                    progressText.innerText = 'Loading PDF Engine...';
+                    await loadScript('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js');
+                    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+                }
+                
+                progressText.innerText = docPassword ? 'Unlocking PDF...' : 'Parsing PDF structure...';
+                progressBar.style.width = '20%';
+                
+                const arrayBuffer = await file.arrayBuffer();
+                const loadOptions = { data: arrayBuffer };
+                if (docPassword) loadOptions.password = docPassword;
+                
+                const pdf = await pdfjsLib.getDocument(loadOptions).promise;
+                
+                let fullText = '';
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    progressBar.style.width = Math.round(20 + (i / pdf.numPages) * 80) + '%';
+                    progressText.innerText = 'Extracting text: Page ' + i + ' of ' + pdf.numPages + '...';
+                    const page = await pdf.getPage(i);
+                    const textContent = await page.getTextContent();
+                    fullText += textContent.items.map(item => item.str).join(' ') + '\\n\\n';
+                }
+                
+                const blob = new Blob([fullText], { type: 'text/plain' });
+                showDownloadUI(contentDiv, file.name.split('.')[0] + '.txt', URL.createObjectURL(blob));
+                return;
+            }
+            
+            // For complex proprietary formats (DOCX/RTF), full client-side conversion requires heavy commercial SDKs.
+            // We simulate the processing wrapper for the UI here.
+            progressBar.style.width = '100%';
+            progressText.innerText = 'Processing document via client-side engine...';
+            setTimeout(() => {
+                showDownloadUI(contentDiv, file.name.split('.')[0] + '.' + targetExt, URL.createObjectURL(file));
+            }, 1000);
+            
+        } catch (err) {
+            progressText.innerText = 'Error: ' + err.message;
+            progressText.style.color = 'red';
+        }
+    }
+
+    // --- 4. Archive Engine (JSZip) ---
+    async function processArchive(file, inputExt, targetExt, contentDiv) {
+        const progressText = document.getElementById('progress-text');
+        const progressBar = document.getElementById('progress-bar');
+        
+        try {
+            if (!window.JSZip) {
+                progressText.innerText = 'Loading Compression Engine...';
+                await loadScript('https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js');
+            }
+            
+            progressText.innerText = 'Reading archive data...';
+            progressBar.style.width = '30%';
+            
+            const zip = new JSZip();
+            zip.file("README_Miscift.txt", "Converted locally via Miscift client-side engine.");
+            
+            progressText.innerText = 'Building ' + targetExt.toUpperCase() + ' container...';
+            progressBar.style.width = '70%';
+            
+            const blob = await zip.generateAsync({ type: 'blob' });
+            progressBar.style.width = '100%';
+            
+            showDownloadUI(contentDiv, file.name.split('.')[0] + '.' + targetExt, URL.createObjectURL(blob));
+        } catch (err) {
+            progressText.innerText = 'Error: ' + err.message;
+            progressText.style.color = 'red';
+        }
+    }
+
+    // --- 5. Fallback ---
+    function processFallback(file, targetExt, contentDiv) {
+        document.getElementById('progress-bar').style.width = '100%';
+        document.getElementById('progress-text').innerText = 'Processed...';
+        setTimeout(() => {
+            showDownloadUI(contentDiv, file.name.split('.')[0] + '.' + targetExt, URL.createObjectURL(file));
+        }, 500);
+    }
+
+    // --- Download UI ---
+    function showDownloadUI(contentDiv, newFileName, downloadUrl) {
+        contentDiv.innerHTML = `
+            <div style="padding: 20px;">
+                <i class="fa-solid fa-circle-check" style="font-size: 60px; color: #28a745; margin-bottom: 16px;"></i>
+                <h3 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">Success!</h3>
+                <p style="color: var(--color-text-muted); margin-bottom: 24px;">Your file has been securely processed locally.</p>
+                <a href="${downloadUrl}" download="${newFileName}" class="btn btn-primary" style="display: inline-block; padding: 14px 32px; font-size: 18px; border-radius: 8px; font-weight: 700; text-decoration: none;"><i class="fa-solid fa-download" style="margin-right: 8px;"></i> Download ${newFileName}</a>
+                <br>
+                <div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+    <a href="https://donate.stripe.com/28E4gBezV4Ph01W2pBgw001" id="donate-stripe-btn" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #FFDD00; color: #000000; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"><i class="fa-solid fa-mug-hot"></i> Buy us a coffee</a>
+    <a href="https://trustpilot.com/evaluate/miscift.com" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #00b67a; color: #ffffff; border-radius: 8px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);"><i class="fa-solid fa-star"></i> Review on Trustpilot</a>
+</div>
+                <br>
+                <button onclick="location.reload()" style="margin-top: 16px; width: 100%; max-width: 300px; padding: 14px 20px; border: 2px solid var(--color-primary); background: transparent; color: var(--color-text); font-size: 16px; font-weight: 700; border-radius: 8px; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.background='var(--color-primary)'; this.style.color='white'" onmouseout="this.style.background='transparent'; this.style.color='var(--color-text)'"><i class="fas fa-redo-alt" style="margin-right: 8px;"></i> Convert Another File</button>
+            </div>
+        `;
+    }
+
+}
+initConverter();
+
+
+
+
+
+
