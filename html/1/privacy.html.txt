@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +95,7 @@
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">The core of our privacy guarantee lies in our use of client-side WebAssembly (Wasm) technology. When you select a file to convert, whether it is a highly confidential legal document or a private family photograph, that file is processed entirely within the memory of your own web browser.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because the processing happens locally on your device's CPU and RAM, your files are never transmitted across the internet to our servers. There are no upload queues, no cloud storage buckets, and no temporary directories hosted on our infrastructure. Your payload physically cannot be intercepted by us.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We do not require you to create an account, register an email address, or provide any personal identification to use our services. You can utilize our entire suite of over 200 conversion tools completely anonymously, ensuring your digital footprint remains as small as possible.</p>
-<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px; font-weight: bold;">We do not collect, store, or sell any user data input into these tools. All processing happens client-side / our servers clear data every 24 hours.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px; font-weight: bold;">We do not collect, store, or sell any user data input into these tools. All processing happens entirely client-side, meaning your data never even touches our servers.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Because we do not host your files, we do not have a 'data retention' policy for user payloads. Your files exist solely on your hard drive, and the converted output is saved directly back to your hard drive. Once you close your browser tab, all temporary memory utilized during the conversion is instantly wiped by your operating system.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are entirely compliant with the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and all other major international data privacy frameworks. In fact, our serverless architecture fundamentally bypasses many of these regulations because we do not collect or process Personally Identifiable Information (PII).</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our website does not utilize invasive third-party tracking pixels or session recording scripts. We may use basic analytics to understand site traffic, and our ad network may use cookies as described below.</p>
@@ -114,5 +115,4 @@
     <script src="js/navigation.js?v=4"></script>
 </body>
 </html>
-
 
