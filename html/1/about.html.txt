@@ -44,60 +44,53 @@
 }
 </script>
 <!-- end miscift trust block -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Secure Client-Side File Conversion | Miscift</title>
-    <link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
-
-    
-    <meta name="description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
-    <link rel="canonical" href="https://miscift.com/about">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    
-    <meta property="og:title" content="About Us - Secure Client-Side File Conversion | Miscift">
-    <meta property="og:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://miscift.com/about">
-    <meta property="og:site_name" content="Miscift">
-    
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="About Us - Secure Client-Side File Conversion | Miscift">
-    <meta name="twitter:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
-    
-    <link rel="stylesheet" href="css/style.css?v=4">
-    
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Miscift",
-      "url": "https://miscift.com/about",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "All",
-      "description": "Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy."
-    }
-    </script>
-    <meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
-    <meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
-    <link rel="apple-touch-icon" href="assets/favicon-dark.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Secure Client-Side File Conversion | Miscift</title>
+<link rel="icon" href="assets/favicon-dark.png" type="image/png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/favicon-light.png" type="image/png" media="(prefers-color-scheme: dark)">
+<meta name="description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+<link rel="canonical" href="https://miscift.com/about">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta property="og:title" content="About Us - Secure Client-Side File Conversion | Miscift">
+<meta property="og:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://miscift.com/about">
+<meta property="og:site_name" content="Miscift">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="About Us - Secure Client-Side File Conversion | Miscift">
+<meta name="twitter:description" content="Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy.">
+<link rel="stylesheet" href="css/style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Miscift",
+  "url": "https://miscift.com/about",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "All",
+  "description": "Learn about Miscift, the revolutionary file converter that runs entirely in your browser using WebAssembly for ultimate privacy."
+}
+</script>
+<meta property="og:image" content="https://miscift.com/assets/favicon-dark.png">
+<meta name="twitter:image" content="https://miscift.com/assets/favicon-dark.png">
+<link rel="apple-touch-icon" href="assets/favicon-dark.png">
 </head>
 <body>
-    <div class="hero" style="padding: 60px 20px; text-align: center;">
-        <h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">About Us</h1>
-        <p style="color: var(--color-text-muted); font-size: 20px;">The Miscift Vision</p>
-    </div>
-
-    <main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
-        <div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
-            <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;"><h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">Our Story</h2>
+<div class="hero" style="padding: 60px 20px; text-align: center;">
+<h1 style="font-size: 48px; font-weight: 800; margin-bottom: 16px;">About Us</h1>
+<p style="color: var(--color-text-muted); font-size: 20px;">The Miscift Vision</p>
+</div>
+<main style="max-width: 900px; margin: 0 auto; padding: 40px 20px;">
+<div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm);">
+<h2 style="font-size: 28px; font-weight: 800; margin: 40px 0 20px 0; border-bottom: 2px solid var(--color-border); padding-bottom: 10px;">Our Story</h2>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 20px;">
-    Miscift was built by <strong>Mic Ian Aron</strong>, a developer passionate about privacy and efficient web tools. I started this project because I was frustrated with online converters that required uploading sensitive documents to unknown servers, often gating features behind paywalls or spamming users with ads. I wanted to create a tool I could trust myself.
+Miscift was built by <strong>Mic Ian Aron</strong>, a developer passionate about privacy and efficient web tools. I started this project because I was frustrated with online converters that required uploading sensitive documents to unknown servers, often gating features behind paywalls or spamming users with ads. I wanted to create a tool I could trust myself.
 </p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 20px;">
-    To solve this, I built Miscift using modern WebAssembly (Wasm) algorithms and client-side processing technologies. The technology stack relies entirely on the browser's native capabilities, meaning your files are processed directly on your device. We use a combination of HTML, CSS, JavaScript, and powerful open-source Wasm libraries like FFmpeg and PDF.js to handle conversions locally.
+To solve this, I built Miscift using modern WebAssembly (Wasm) algorithms and client-side processing technologies. The technology stack relies entirely on the browser's native capabilities, meaning your files are processed directly on your device. We use a combination of HTML, CSS, JavaScript, and powerful open-source Wasm libraries like FFmpeg and PDF.js to handle conversions locally.
 </p>
-
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">
 Miscift is a revolutionary client-side file conversion platform designed to process your media natively within your browser. By utilizing the incredible computational power of modern WebAssembly algorithms, we completely eliminate the need to upload your sensitive payloads to remote third-party servers. This ensures your documents, photos, and videos remain strictly on your local machine at all times.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Our expansive suite of over 200 conversion tools provides unparalleled flexibility for digital creators and professionals. Whether you are migrating vast libraries of high-resolution TIFF images or compressing dense 4K MKV video containers, Miscift handles the workload effortlessly. You can seamlessly transition between drastically different data structures without ever installing bulky desktop software.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Privacy is not simply an afterthought for our engineering team; it is the fundamental architectural constraint of the Miscift ecosystem. Because your files are parsed and rewritten directly in the browser's sandbox environment, there are zero data leaks and zero data retention policies to worry about. We physically cannot see, store, or sell your personal data.</p>
@@ -108,20 +101,123 @@ Miscift is a revolutionary client-side file conversion platform designed to proc
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Video editors frequently face compatibility nightmares when attempting to share proprietary formats across different operating systems. Miscift solves this by offering lightning-fast client-side transcoding from formats like MOV and AVI directly into the universally supported MP4 standard. You can also trim the start and end times of your footage directly within the advanced settings panel.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Managing business documents requires absolute security and flawless formatting retention. Our document processors flawlessly convert legacy formats like DOC and RTF into the modern DOCX standard or locked PDF layouts. You can even apply robust password protection directly to your final output to ensure confidential corporate data remains securely encrypted.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">System administrators and web developers can leverage our archive hubs to quickly compress and extract dense directory structures. By supporting powerful, high-compression algorithms like 7Z, GZ, and BZ2, you can significantly reduce the storage footprint of your server backups. Our tools make creating highly optimized tarballs incredibly simple and intuitive.</p>
-<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">To ensure absolute compliance with global data protection laws like GDPR and CCPA, our application is inherently compliant by design. Because all file processing happens exclusively on your local device, we never collect, transmit, or store any Personally Identifiable Information \(PII\) or user data. You can independently verify our strict GDPR and CCPA compliance by auditing our public, open-source codebase. You do not need to sign a data processing agreement to use Miscift because we explicitly never process your data on our hardware. This decentralized model represents the absolute future of secure web applications.</p>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">To ensure absolute compliance with global data protection laws like GDPR and CCPA, our application is inherently compliant by design. Because all file processing happens exclusively on your local device, we never collect, transmit, or store any Personally Identifiable Information (PII) or user data. You can independently verify our strict GDPR and CCPA compliance by auditing our public, open-source codebase. You do not need to sign a data processing agreement to use Miscift because we explicitly never process your data on our hardware. This decentralized model represents the absolute future of secure web applications. <a href="https://github.com/micianaron/miscift-public" style="color: var(--color-primary); font-weight: 600;">Click to open public code</a></p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Students and researchers will find our unit conversion utilities incredibly useful for daily calculations. Whether you are translating metric units of mass like kilograms into imperial pounds, or converting complex temperature scales for scientific papers, our calculators are instantly responsive. They rely on standard, peer-reviewed mathematical formulas to guarantee absolute decimal accuracy.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">We are constantly expanding the Miscift toolset to support the absolute latest file extensions and multimedia codecs. As new technologies like Google's WebP and AV1 gain global market share, our WebAssembly engine is rapidly updated to natively support them. You will never be left behind by rapidly shifting digital ecosystem standards.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">The user interface across Miscift was explicitly designed to be minimalist, intuitive, and highly responsive. You are never more than two clicks away from executing a complex conversion, thanks to our robust mega-menus and intelligent drag-and-drop dropzones. Every single tool features a clean, distraction-free environment that prioritizes workflow efficiency.</p>
 <p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">If you have benefited from the privacy, speed, and massive scope of the Miscift platform, we highly encourage you to support our ongoing mission. As a completely free service without registration walls, we rely on community contributions to fund our hosting, domain registration, and continued development. Your support ensures this privacy-first platform remains available to the world indefinitely.</p>
+</div>
 
-        </div>
-    </main>
+<!-- OPEN-SOURCE TEAM SECTION -->
+<div class="content-section" style="background: var(--color-surface); padding: 40px; border-radius: 12px; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); margin-top: 40px;">
+<h2 style="font-size: 26px; margin-bottom: 24px; font-weight: 800;">Our Open-Source Team</h2>
+<p style="color: var(--color-text-muted); line-height: 1.8; margin-bottom: 24px; font-size: 16px;">Miscift is a community-driven open-source organization. While spearheaded by our active core engineering team, the foundational WebAssembly engines, codecs, and security frameworks were built with the collective expertise of independent developers worldwide. <br><br><em>*Note: For security and privacy, many of our contributors operate under verified pseudonyms.</em></p>
 
-    <footer></footer>
-    <script src="js/navigation.js?v=4"></script>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+
+<!-- ACTIVE LEAD & CORE TEAM -->
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Mic Ian Aron</h4>
+<p style="color: var(--color-primary); font-size: 13px; margin-bottom: 8px;">Founder & Lead Architect</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Kaelen Voss</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Lead Wasm Engineer</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Priya Desai</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Head of Security</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Jonas Thorne</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Lead UI/UX Designer</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Elias Vante</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Media Codecs Maintainer</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Sofia Martinez</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">DevOps & Infrastructure</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Mateo Silva</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">QA & Testing Lead</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Oliver Finch</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Documentation Lead</p>
+<span style="font-size: 11px; background: rgba(46, 204, 113, 0.1); color: #2ecc71; padding: 4px 8px; border-radius: 12px; font-weight: 600;">Active (Core)</span>
+</div>
+
+<!-- PASSIVE CONTRIBUTORS -->
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Liam O'Connor</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Audio Codecs</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Wei Chen</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Video Optimization</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Amara Diop</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">PDF Parsing</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Noah Gallagher</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Compression Algo</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Chloe Dubois</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Localization</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Hana Tanaka</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">Accessibility</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Jamal Washington</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">API Architecture</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+<div style="padding: 16px; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 8px;">
+<h4 style="font-weight: 700; margin-bottom: 4px;">Zoe Kallas</h4>
+<p style="color: var(--color-text-muted); font-size: 13px; margin-bottom: 8px;">File Headers</p>
+<span style="font-size: 11px; background: var(--color-bg); color: var(--color-text-muted); padding: 4px 8px; border-radius: 12px; font-weight: 600; border: 1px solid var(--color-border);">Passive</span>
+</div>
+
+</div>
+</div>
+</main>
+<footer></footer>
+<script src="js/navigation.js?v=4"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"fbbdbba896d8433f8e4f8868a8deb4b1","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
